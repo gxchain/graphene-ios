@@ -7,31 +7,165 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D33F7F0202B5694005806F2 /* Graphene.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D33F7EE202B5694005806F2 /* Graphene.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D08BD212047E25200328C0F /* ConnectionManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08BD202047E25200328C0F /* ConnectionManagerTests.m */; };
+		1D08BD232047E25200328C0F /* Graphene.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D33F7EB202B5694005806F2 /* Graphene.framework */; };
+		1D08BD2B204807B200328C0F /* libssl-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D08BD29204807B200328C0F /* libssl-ios.a */; };
+		1D08BD2C204807B200328C0F /* libcrypto-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D08BD2A204807B200328C0F /* libcrypto-ios.a */; };
+		1D08BD2E2048089B00328C0F /* PublicKeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08BD2D2048089B00328C0F /* PublicKeyTests.m */; };
+		1D08BD3020480C0100328C0F /* PrivateKeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08BD2F20480C0100328C0F /* PrivateKeyTests.m */; };
+		1D33F7FC202B657F005806F2 /* Graphene.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D33F7FA202B657F005806F2 /* Graphene.h */; };
+		1D33F7FD202B657F005806F2 /* Graphene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D33F7FB202B657F005806F2 /* Graphene.m */; };
+		1D92372E204297BC0092A484 /* ChainWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92372C204297BC0092A484 /* ChainWebSocket.h */; };
+		1D92372F204297BC0092A484 /* ChainWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92372D204297BC0092A484 /* ChainWebSocket.m */; };
+		1D923741204539620092A484 /* GrapheneApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92373F204539620092A484 /* GrapheneApi.h */; };
+		1D923742204539620092A484 /* GrapheneApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D923740204539620092A484 /* GrapheneApi.m */; };
+		1D923745204543830092A484 /* ConnectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D923743204543830092A484 /* ConnectionManager.h */; };
+		1D923746204543830092A484 /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D923744204543830092A484 /* ConnectionManager.m */; };
+		1D92374920454DAD0092A484 /* ApiInstances.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92374720454DAD0092A484 /* ApiInstances.h */; };
+		1D92374A20454DAD0092A484 /* ApiInstances.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92374820454DAD0092A484 /* ApiInstances.m */; };
+		1D92374D20458E3A0092A484 /* TransactionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92374B20458E3A0092A484 /* TransactionBuilder.h */; };
+		1D92374E20458E3A0092A484 /* TransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92374C20458E3A0092A484 /* TransactionBuilder.m */; };
+		1D923754204599AA0092A484 /* PublicKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D923752204599AA0092A484 /* PublicKey.m */; };
+		1D923757204599BB0092A484 /* PrivateKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D923755204599BB0092A484 /* PrivateKey.h */; };
+		1D923758204599BB0092A484 /* PrivateKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D923756204599BB0092A484 /* PrivateKey.m */; };
+		1D9237B2204699C70092A484 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D923762204699C70092A484 /* libcrypto.a */; };
+		1D9237FF204699C70092A484 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9237B1204699C70092A484 /* libssl.a */; };
+		1D92380520469AAD0092A484 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92380120469AAC0092A484 /* NSString+Base64.m */; };
+		1D92380620469AAD0092A484 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92380220469AAC0092A484 /* NSData+Base64.h */; };
+		1D92380720469AAD0092A484 /* NSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92380320469AAC0092A484 /* NSString+Base64.h */; };
+		1D92380820469AAD0092A484 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92380420469AAC0092A484 /* NSData+Base64.m */; };
+		1D9238362046D9160092A484 /* BTCBase58.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D9238282046D9150092A484 /* BTCBase58.h */; };
+		1D9238372046D9160092A484 /* BTCBigNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9238292046D9150092A484 /* BTCBigNumber.m */; };
+		1D9238382046D9160092A484 /* BTCBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92382A2046D9150092A484 /* BTCBase58.m */; };
+		1D9238392046D9160092A484 /* BTCData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92382B2046D9150092A484 /* BTCData.h */; };
+		1D92383A2046D9160092A484 /* BTCCurvePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92382C2046D9150092A484 /* BTCCurvePoint.m */; };
+		1D92383B2046D9160092A484 /* NS+BTCBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92382D2046D9150092A484 /* NS+BTCBase58.m */; };
+		1D92383C2046D9160092A484 /* BTCBigNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92382E2046D9150092A484 /* BTCBigNumber.h */; };
+		1D92383D2046D9160092A484 /* BTCCurvePoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92382F2046D9150092A484 /* BTCCurvePoint.h */; };
+		1D92383E2046D9160092A484 /* NS+BTCBase58.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D9238302046D9150092A484 /* NS+BTCBase58.h */; };
+		1D92383F2046D9160092A484 /* BTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9238312046D9150092A484 /* BTCData.m */; };
+		1D9238422046D9160092A484 /* NSData+BTCData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D9238342046D9160092A484 /* NSData+BTCData.h */; };
+		1D9238432046D9160092A484 /* NSData+BTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9238352046D9160092A484 /* NSData+BTCData.m */; };
+		1D92384A2046DC740092A484 /* ChainConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D9238492046DC740092A484 /* ChainConfig.h */; };
+		1DD8491020491ED7006FD274 /* PublicKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D923751204599AA0092A484 /* PublicKey.h */; };
+		2847BF29F7EABA089991317A /* libPods-Graphene.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DC86B66AAEE0A1D3F7E2F4 /* libPods-Graphene.a */; };
+		B8ABA744519B7F66D5F52418 /* libPods-GrapheneTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5786C712C70F47D5990F4E61 /* libPods-GrapheneTests.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1D08BD242047E25200328C0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D33F7E2202B5694005806F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D33F7EA202B5694005806F2;
+			remoteInfo = Graphene;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0EF1139DC03A354E3D4EA0EE /* Pods-Graphene.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graphene.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Graphene/Pods-Graphene.debug.xcconfig"; sourceTree = "<group>"; };
+		1D08BD1E2047E25200328C0F /* GrapheneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrapheneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D08BD202047E25200328C0F /* ConnectionManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectionManagerTests.m; sourceTree = "<group>"; };
+		1D08BD222047E25200328C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D08BD29204807B200328C0F /* libssl-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libssl-ios.a"; path = "GrapheneTests/includes/lib/libssl-ios.a"; sourceTree = "<group>"; };
+		1D08BD2A204807B200328C0F /* libcrypto-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-ios.a"; path = "GrapheneTests/includes/lib/libcrypto-ios.a"; sourceTree = "<group>"; };
+		1D08BD2D2048089B00328C0F /* PublicKeyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicKeyTests.m; sourceTree = "<group>"; };
+		1D08BD2F20480C0100328C0F /* PrivateKeyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateKeyTests.m; sourceTree = "<group>"; };
 		1D33F7EB202B5694005806F2 /* Graphene.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Graphene.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D33F7EE202B5694005806F2 /* Graphene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graphene.h; sourceTree = "<group>"; };
 		1D33F7EF202B5694005806F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D33F7F7202B64B1005806F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1D33F7FA202B657F005806F2 /* Graphene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graphene.h; sourceTree = "<group>"; };
+		1D33F7FB202B657F005806F2 /* Graphene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Graphene.m; sourceTree = "<group>"; };
+		1D92372C204297BC0092A484 /* ChainWebSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainWebSocket.h; sourceTree = "<group>"; };
+		1D92372D204297BC0092A484 /* ChainWebSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChainWebSocket.m; sourceTree = "<group>"; };
+		1D92373F204539620092A484 /* GrapheneApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrapheneApi.h; sourceTree = "<group>"; };
+		1D923740204539620092A484 /* GrapheneApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrapheneApi.m; sourceTree = "<group>"; };
+		1D923743204543830092A484 /* ConnectionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectionManager.h; sourceTree = "<group>"; };
+		1D923744204543830092A484 /* ConnectionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectionManager.m; sourceTree = "<group>"; };
+		1D92374720454DAD0092A484 /* ApiInstances.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiInstances.h; sourceTree = "<group>"; };
+		1D92374820454DAD0092A484 /* ApiInstances.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiInstances.m; sourceTree = "<group>"; };
+		1D92374B20458E3A0092A484 /* TransactionBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionBuilder.h; sourceTree = "<group>"; };
+		1D92374C20458E3A0092A484 /* TransactionBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionBuilder.m; sourceTree = "<group>"; };
+		1D923751204599AA0092A484 /* PublicKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicKey.h; sourceTree = "<group>"; };
+		1D923752204599AA0092A484 /* PublicKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicKey.m; sourceTree = "<group>"; };
+		1D923755204599BB0092A484 /* PrivateKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateKey.h; sourceTree = "<group>"; };
+		1D923756204599BB0092A484 /* PrivateKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateKey.m; sourceTree = "<group>"; };
+		1D923762204699C70092A484 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		1D9237B1204699C70092A484 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		1D92380120469AAC0092A484 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		1D92380220469AAC0092A484 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		1D92380320469AAC0092A484 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		1D92380420469AAC0092A484 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		1D9238252046C8170092A484 /* openssl */ = {isa = PBXFileReference; lastKnownFileType = folder; path = openssl; sourceTree = "<group>"; };
+		1D9238282046D9150092A484 /* BTCBase58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCBase58.h; sourceTree = "<group>"; };
+		1D9238292046D9150092A484 /* BTCBigNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCBigNumber.m; sourceTree = "<group>"; };
+		1D92382A2046D9150092A484 /* BTCBase58.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCBase58.m; sourceTree = "<group>"; };
+		1D92382B2046D9150092A484 /* BTCData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCData.h; sourceTree = "<group>"; };
+		1D92382C2046D9150092A484 /* BTCCurvePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCCurvePoint.m; sourceTree = "<group>"; };
+		1D92382D2046D9150092A484 /* NS+BTCBase58.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NS+BTCBase58.m"; sourceTree = "<group>"; };
+		1D92382E2046D9150092A484 /* BTCBigNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCBigNumber.h; sourceTree = "<group>"; };
+		1D92382F2046D9150092A484 /* BTCCurvePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCCurvePoint.h; sourceTree = "<group>"; };
+		1D9238302046D9150092A484 /* NS+BTCBase58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NS+BTCBase58.h"; sourceTree = "<group>"; };
+		1D9238312046D9150092A484 /* BTCData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCData.m; sourceTree = "<group>"; };
+		1D9238342046D9160092A484 /* NSData+BTCData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BTCData.h"; sourceTree = "<group>"; };
+		1D9238352046D9160092A484 /* NSData+BTCData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+BTCData.m"; sourceTree = "<group>"; };
+		1D9238492046DC740092A484 /* ChainConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainConfig.h; sourceTree = "<group>"; };
+		1DFDC0AB2047C7B200DCC11A /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		1DFDC0AC2047C7B200DCC11A /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		30DC86B66AAEE0A1D3F7E2F4 /* libPods-Graphene.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Graphene.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3805D3DB9C7A732554F502DA /* Pods-Graphene.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graphene.release.xcconfig"; path = "Pods/Target Support Files/Pods-Graphene/Pods-Graphene.release.xcconfig"; sourceTree = "<group>"; };
+		513231D46C38065AA36BE70D /* Pods-GrapheneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrapheneTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrapheneTests/Pods-GrapheneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		562E3831E0992D8C7755E3DD /* Pods-GrapheneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrapheneTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrapheneTests/Pods-GrapheneTests.release.xcconfig"; sourceTree = "<group>"; };
+		5786C712C70F47D5990F4E61 /* libPods-GrapheneTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GrapheneTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DBD90C4C9C28B8B0E908DD6 /* Pods-GrapheneTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrapheneTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrapheneTest/Pods-GrapheneTest.release.xcconfig"; sourceTree = "<group>"; };
+		B6D527FC4928EABF8B447918 /* Pods-GrapheneTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrapheneTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrapheneTest/Pods-GrapheneTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E9445DF9FA4298DE86DAD3BF /* libPods-GrapheneTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GrapheneTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1D08BD1B2047E25200328C0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D08BD2B204807B200328C0F /* libssl-ios.a in Frameworks */,
+				1D08BD2C204807B200328C0F /* libcrypto-ios.a in Frameworks */,
+				1D08BD232047E25200328C0F /* Graphene.framework in Frameworks */,
+				B8ABA744519B7F66D5F52418 /* libPods-GrapheneTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D33F7E7202B5694005806F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D9237B2204699C70092A484 /* libcrypto.a in Frameworks */,
+				2847BF29F7EABA089991317A /* libPods-Graphene.a in Frameworks */,
+				1D9237FF204699C70092A484 /* libssl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D08BD1F2047E25200328C0F /* GrapheneTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D08BD202047E25200328C0F /* ConnectionManagerTests.m */,
+				1D08BD222047E25200328C0F /* Info.plist */,
+				1D08BD2D2048089B00328C0F /* PublicKeyTests.m */,
+				1D08BD2F20480C0100328C0F /* PrivateKeyTests.m */,
+			);
+			path = GrapheneTests;
+			sourceTree = "<group>";
+		};
 		1D33F7E1202B5694005806F2 = {
 			isa = PBXGroup;
 			children = (
 				1D33F7ED202B5694005806F2 /* Graphene */,
+				1D08BD1F2047E25200328C0F /* GrapheneTests */,
 				1D33F7EC202B5694005806F2 /* Products */,
+				1D33F7F6202B64B0005806F2 /* Frameworks */,
+				FCAAF88528F739BF81CBFBD3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				1D33F7EB202B5694005806F2 /* Graphene.framework */,
+				1D08BD1E2047E25200328C0F /* GrapheneTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +181,146 @@
 		1D33F7ED202B5694005806F2 /* Graphene */ = {
 			isa = PBXGroup;
 			children = (
-				1D33F7EE202B5694005806F2 /* Graphene.h */,
+				1D92380020469AAC0092A484 /* category */,
+				1D33F7F9202B650B005806F2 /* ws */,
+				1D33F7F8202B6503005806F2 /* lib */,
 				1D33F7EF202B5694005806F2 /* Info.plist */,
 			);
 			path = Graphene;
+			sourceTree = "<group>";
+		};
+		1D33F7F6202B64B0005806F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D08BD2A204807B200328C0F /* libcrypto-ios.a */,
+				1D08BD29204807B200328C0F /* libssl-ios.a */,
+				1DFDC0AA2047C7B200DCC11A /* openssl */,
+				1D33F7F7202B64B1005806F2 /* Foundation.framework */,
+				30DC86B66AAEE0A1D3F7E2F4 /* libPods-Graphene.a */,
+				5786C712C70F47D5990F4E61 /* libPods-GrapheneTests.a */,
+				E9445DF9FA4298DE86DAD3BF /* libPods-GrapheneTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D33F7F8202B6503005806F2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				1D923761204699C60092A484 /* openssl */,
+				1D9237502045996D0092A484 /* ecc */,
+				1D33F7FA202B657F005806F2 /* Graphene.h */,
+				1D33F7FB202B657F005806F2 /* Graphene.m */,
+				1D92374F204599540092A484 /* chain */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		1D33F7F9202B650B005806F2 /* ws */ = {
+			isa = PBXGroup;
+			children = (
+				1D92372C204297BC0092A484 /* ChainWebSocket.h */,
+				1D92372D204297BC0092A484 /* ChainWebSocket.m */,
+				1D92373F204539620092A484 /* GrapheneApi.h */,
+				1D923740204539620092A484 /* GrapheneApi.m */,
+				1D923743204543830092A484 /* ConnectionManager.h */,
+				1D923744204543830092A484 /* ConnectionManager.m */,
+				1D92374720454DAD0092A484 /* ApiInstances.h */,
+				1D92374820454DAD0092A484 /* ApiInstances.m */,
+				1D9238492046DC740092A484 /* ChainConfig.h */,
+			);
+			path = ws;
+			sourceTree = "<group>";
+		};
+		1D92374F204599540092A484 /* chain */ = {
+			isa = PBXGroup;
+			children = (
+				1D92374B20458E3A0092A484 /* TransactionBuilder.h */,
+				1D92374C20458E3A0092A484 /* TransactionBuilder.m */,
+			);
+			path = chain;
+			sourceTree = "<group>";
+		};
+		1D9237502045996D0092A484 /* ecc */ = {
+			isa = PBXGroup;
+			children = (
+				1D9238442046D9260092A484 /* vendor */,
+				1D923751204599AA0092A484 /* PublicKey.h */,
+				1D923752204599AA0092A484 /* PublicKey.m */,
+				1D923755204599BB0092A484 /* PrivateKey.h */,
+				1D923756204599BB0092A484 /* PrivateKey.m */,
+			);
+			path = ecc;
+			sourceTree = "<group>";
+		};
+		1D923761204699C60092A484 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				1D923762204699C70092A484 /* libcrypto.a */,
+				1D923763204699C70092A484 /* include */,
+				1D9237B1204699C70092A484 /* libssl.a */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		1D923763204699C70092A484 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				1D9238252046C8170092A484 /* openssl */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		1D92380020469AAC0092A484 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				1D92380120469AAC0092A484 /* NSString+Base64.m */,
+				1D92380220469AAC0092A484 /* NSData+Base64.h */,
+				1D92380320469AAC0092A484 /* NSString+Base64.h */,
+				1D92380420469AAC0092A484 /* NSData+Base64.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		1D9238442046D9260092A484 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				1D9238282046D9150092A484 /* BTCBase58.h */,
+				1D92382A2046D9150092A484 /* BTCBase58.m */,
+				1D92382E2046D9150092A484 /* BTCBigNumber.h */,
+				1D9238292046D9150092A484 /* BTCBigNumber.m */,
+				1D92382F2046D9150092A484 /* BTCCurvePoint.h */,
+				1D92382C2046D9150092A484 /* BTCCurvePoint.m */,
+				1D92382B2046D9150092A484 /* BTCData.h */,
+				1D9238312046D9150092A484 /* BTCData.m */,
+				1D9238302046D9150092A484 /* NS+BTCBase58.h */,
+				1D92382D2046D9150092A484 /* NS+BTCBase58.m */,
+				1D9238342046D9160092A484 /* NSData+BTCData.h */,
+				1D9238352046D9160092A484 /* NSData+BTCData.m */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		1DFDC0AA2047C7B200DCC11A /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				1DFDC0AB2047C7B200DCC11A /* libcrypto.a */,
+				1DFDC0AC2047C7B200DCC11A /* libssl.a */,
+			);
+			name = openssl;
+			path = GrapheneTest/openssl;
+			sourceTree = "<group>";
+		};
+		FCAAF88528F739BF81CBFBD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EF1139DC03A354E3D4EA0EE /* Pods-Graphene.debug.xcconfig */,
+				3805D3DB9C7A732554F502DA /* Pods-Graphene.release.xcconfig */,
+				513231D46C38065AA36BE70D /* Pods-GrapheneTests.debug.xcconfig */,
+				562E3831E0992D8C7755E3DD /* Pods-GrapheneTests.release.xcconfig */,
+				B6D527FC4928EABF8B447918 /* Pods-GrapheneTest.debug.xcconfig */,
+				8DBD90C4C9C28B8B0E908DD6 /* Pods-GrapheneTest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,21 +330,60 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D33F7F0202B5694005806F2 /* Graphene.h in Headers */,
+				1D92380620469AAD0092A484 /* NSData+Base64.h in Headers */,
+				1D923745204543830092A484 /* ConnectionManager.h in Headers */,
+				1D92374920454DAD0092A484 /* ApiInstances.h in Headers */,
+				1D92380720469AAD0092A484 /* NSString+Base64.h in Headers */,
+				1D92383D2046D9160092A484 /* BTCCurvePoint.h in Headers */,
+				1D92372E204297BC0092A484 /* ChainWebSocket.h in Headers */,
+				1D33F7FC202B657F005806F2 /* Graphene.h in Headers */,
+				1D9238362046D9160092A484 /* BTCBase58.h in Headers */,
+				1D92383C2046D9160092A484 /* BTCBigNumber.h in Headers */,
+				1DD8491020491ED7006FD274 /* PublicKey.h in Headers */,
+				1D923741204539620092A484 /* GrapheneApi.h in Headers */,
+				1D92384A2046DC740092A484 /* ChainConfig.h in Headers */,
+				1D923757204599BB0092A484 /* PrivateKey.h in Headers */,
+				1D9238392046D9160092A484 /* BTCData.h in Headers */,
+				1D92374D20458E3A0092A484 /* TransactionBuilder.h in Headers */,
+				1D9238422046D9160092A484 /* NSData+BTCData.h in Headers */,
+				1D92383E2046D9160092A484 /* NS+BTCBase58.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1D08BD1D2047E25200328C0F /* GrapheneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D08BD262047E25200328C0F /* Build configuration list for PBXNativeTarget "GrapheneTests" */;
+			buildPhases = (
+				15D16A2F3E7D77CDD114EB8A /* [CP] Check Pods Manifest.lock */,
+				1D08BD1A2047E25200328C0F /* Sources */,
+				1D08BD1B2047E25200328C0F /* Frameworks */,
+				1D08BD1C2047E25200328C0F /* Resources */,
+				35D78C61F705726D5401C753 /* [CP] Embed Pods Frameworks */,
+				FD625DCE6E696F912B315FFE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D08BD252047E25200328C0F /* PBXTargetDependency */,
+			);
+			name = GrapheneTests;
+			productName = GrapheneTests;
+			productReference = 1D08BD1E2047E25200328C0F /* GrapheneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1D33F7EA202B5694005806F2 /* Graphene */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D33F7F3202B5694005806F2 /* Build configuration list for PBXNativeTarget "Graphene" */;
 			buildPhases = (
+				EC4A678D3C1E65271E47C1D1 /* [CP] Check Pods Manifest.lock */,
 				1D33F7E6202B5694005806F2 /* Sources */,
 				1D33F7E7202B5694005806F2 /* Frameworks */,
 				1D33F7E8202B5694005806F2 /* Headers */,
 				1D33F7E9202B5694005806F2 /* Resources */,
+				C16FD502E4B745F8F64EE09E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -93,6 +403,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = GXChain;
 				TargetAttributes = {
+					1D08BD1D2047E25200328C0F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					1D33F7EA202B5694005806F2 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -112,11 +426,19 @@
 			projectRoot = "";
 			targets = (
 				1D33F7EA202B5694005806F2 /* Graphene */,
+				1D08BD1D2047E25200328C0F /* GrapheneTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1D08BD1C2047E25200328C0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D33F7E9202B5694005806F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -126,17 +448,178 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15D16A2F3E7D77CDD114EB8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrapheneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35D78C61F705726D5401C753 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrapheneTests/Pods-GrapheneTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C16FD502E4B745F8F64EE09E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Graphene/Pods-Graphene-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC4A678D3C1E65271E47C1D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Graphene-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD625DCE6E696F912B315FFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrapheneTests/Pods-GrapheneTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1D08BD1A2047E25200328C0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D08BD3020480C0100328C0F /* PrivateKeyTests.m in Sources */,
+				1D08BD2E2048089B00328C0F /* PublicKeyTests.m in Sources */,
+				1D08BD212047E25200328C0F /* ConnectionManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D33F7E6202B5694005806F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D92383B2046D9160092A484 /* NS+BTCBase58.m in Sources */,
+				1D92383F2046D9160092A484 /* BTCData.m in Sources */,
+				1D9238372046D9160092A484 /* BTCBigNumber.m in Sources */,
+				1D92374E20458E3A0092A484 /* TransactionBuilder.m in Sources */,
+				1D92374A20454DAD0092A484 /* ApiInstances.m in Sources */,
+				1D33F7FD202B657F005806F2 /* Graphene.m in Sources */,
+				1D92380820469AAD0092A484 /* NSData+Base64.m in Sources */,
+				1D9238432046D9160092A484 /* NSData+BTCData.m in Sources */,
+				1D923758204599BB0092A484 /* PrivateKey.m in Sources */,
+				1D92380520469AAD0092A484 /* NSString+Base64.m in Sources */,
+				1D923746204543830092A484 /* ConnectionManager.m in Sources */,
+				1D92372F204297BC0092A484 /* ChainWebSocket.m in Sources */,
+				1D92383A2046D9160092A484 /* BTCCurvePoint.m in Sources */,
+				1D923754204599AA0092A484 /* PublicKey.m in Sources */,
+				1D923742204539620092A484 /* GrapheneApi.m in Sources */,
+				1D9238382046D9160092A484 /* BTCBase58.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1D08BD252047E25200328C0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D33F7EA202B5694005806F2 /* Graphene */;
+			targetProxy = 1D08BD242047E25200328C0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1D08BD272047E25200328C0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 513231D46C38065AA36BE70D /* Pods-GrapheneTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83KS3G7G35;
+				INFOPLIST_FILE = GrapheneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SocketRocket\"",
+					"$(PROJECT_DIR)/GrapheneTests/includes/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lib.gxb.io.GrapheneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D08BD282047E25200328C0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 562E3831E0992D8C7755E3DD /* Pods-GrapheneTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83KS3G7G35;
+				INFOPLIST_FILE = GrapheneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SocketRocket\"",
+					"$(PROJECT_DIR)/GrapheneTests/includes/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lib.gxb.io.GrapheneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		1D33F7F1202B5694005806F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -166,7 +649,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -186,10 +669,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -224,7 +707,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -238,9 +721,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -248,49 +731,106 @@
 		};
 		1D33F7F4202B5694005806F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EF1139DC03A354E3D4EA0EE /* Pods-Graphene.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 83KS3G7G35;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
+					"\"$(PROJECT_DIR)/Graphene/lib/openssl/include\"",
+				);
 				INFOPLIST_FILE = Graphene/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Graphene/lib/openssl",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-lz",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = lib.gxb.io.Graphene;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "armv7s armv7 arm64";
 			};
 			name = Debug;
 		};
 		1D33F7F5202B5694005806F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3805D3DB9C7A732554F502DA /* Pods-Graphene.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 83KS3G7G35;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
+					"\"$(PROJECT_DIR)/Graphene/lib/openssl/include\"",
+				);
 				INFOPLIST_FILE = Graphene/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Graphene/lib/openssl",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-lz",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = lib.gxb.io.Graphene;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "armv7s armv7 arm64";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D08BD262047E25200328C0F /* Build configuration list for PBXNativeTarget "GrapheneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D08BD272047E25200328C0F /* Debug */,
+				1D08BD282047E25200328C0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1D33F7E5202B5694005806F2 /* Build configuration list for PBXProject "Graphene" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
