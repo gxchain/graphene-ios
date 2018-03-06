@@ -113,7 +113,7 @@
 }
 
 - (NSData*) data {
-    NSMutableData* data = [NSMutableData dataWithLength:33];
+    NSMutableData* data = [NSMutableData dataWithLength:65];
     
     BIGNUM* bn = BN_new();
     
@@ -121,12 +121,12 @@
         return nil;
     }
     
-    if (!EC_POINT_point2bn(_group, _point, POINT_CONVERSION_COMPRESSED, bn, _bnctx)) {
+    if (!EC_POINT_point2bn(_group, _point, POINT_CONVERSION_UNCOMPRESSED, bn, _bnctx)) {
         if (bn) BN_clear_free(bn);
         return nil;
     }
     
-    NSAssert(BN_num_bytes(bn) == 33, @"compressed point must be 33 bytes long");
+    NSAssert(BN_num_bytes(bn) == 65, @"compressed point must be 33 bytes long");
     
     BN_bn2bin(bn, data.mutableBytes);
     

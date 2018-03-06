@@ -224,6 +224,17 @@ char* BTCBase58CStringWithData(NSData* data) {
     return r;
 }
 
+char* BTCBase58CheckCStringWithDataRIPEMD160(NSData* immutabledata) {
+    if (!immutabledata) return NULL;
+    // add 4-byte hash check to the end
+    NSMutableData* data = [immutabledata mutableCopy];
+    NSData* checksum = BTCRIPEMD160(data);
+    [data appendBytes:checksum.bytes length:4];
+    char* result = BTCBase58CStringWithData(data);
+    BTCDataClear(data);
+    return result;
+}
+
 // String in Base58 with checksum
 char* BTCBase58CheckCStringWithData(NSData* immutabledata) {
     if (!immutabledata) return NULL;
@@ -249,6 +260,15 @@ NSString* BTCBase58StringWithData(NSData* data) {
 NSString* BTCBase58CheckStringWithData(NSData* data) {
     if (!data) return nil;
     char* s = BTCBase58CheckCStringWithData(data);
+    id r = [NSString stringWithCString:s encoding:NSASCIIStringEncoding];
+    BTCSecureClearCString(s);
+    free(s);
+    return r;
+}
+
+NSString* BTCBase58CheckStringWithDataRIPEMD160(NSData* data) {
+    if (!data) return nil;
+    char* s = BTCBase58CheckCStringWithDataRIPEMD160(data);
     id r = [NSString stringWithCString:s encoding:NSASCIIStringEncoding];
     BTCSecureClearCString(s);
     free(s);

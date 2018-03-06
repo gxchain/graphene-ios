@@ -39,7 +39,9 @@ NSString* BTCBase58StringWithData(NSData* data);
 // String in Base58 with checksum, you need to free it yourself.
 // It's mutable so you can clear it securely yourself.
 char* BTCBase58CheckCStringWithData(NSData* data);
+char* BTCBase58CheckCStringWithDataRIPEMD160(NSData* data);
 
 // Same as above, but returns an immutable autoreleased string. Suitable for non-sensitive data.
 NSString* BTCBase58CheckStringWithData(NSData* data);
+NSString* BTCBase58CheckStringWithDataRIPEMD160(NSData* data);
 

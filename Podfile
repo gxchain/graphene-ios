@@ -3,6 +3,7 @@ platform :ios, '8.0'
 
 def available_pods
     pod 'SocketRocket'
+    pod 'ASKSecp256k1'
 end
 
 target 'Graphene' do
