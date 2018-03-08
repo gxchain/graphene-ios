@@ -30,7 +30,9 @@
     o2i_ECPublicKey(&_key, &bytes, pubKeyData.length);
     instance._key=_key;
     instance.publicKeyData = pubKeyData;
+    
     return instance;
+    
 }
 
 -(NSString*)toString{

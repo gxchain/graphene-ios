@@ -35,13 +35,15 @@
 
 - (void)testSharedSecret{
     PrivateKey* privateKey=[PrivateKey fromWif:@"5Ka9YjFQtfUUX2DdnqkaPWH1rVeSeby7Cj2VdjRt79S9kKLvXR7"];
-    
     NSLog(@"public:%@",[[privateKey getPublic] toString]);
-    NSLog(@"shared:%@",[privateKey sharedSecret:[privateKey getPublic]]);
-//    PublicKey* pub1= [privateKey getPublic];
-//    PublicKey* pub2= [privateKey getPublic2];
-//    PublicKey* pubKey=[PublicKey fromString:@"GXC7XzFVivuBtuc2rz3Efkb41JCN4KH7iENAx9rch9QkowEmc4UvV"];
-//    NSLog(@"%@\n%@",pubKey.publicKeyData,[privateKey getPublic].publicKeyData);
+    NSLog(@"shared:%@",BTCHexFromData([privateKey sharedSecret:[privateKey getPublic]]));
+}
+
+-(void)testSignature{
+    NSString* message = @"😜";
+    PrivateKey* privateKey=[PrivateKey fromWif:@"5Ka9YjFQtfUUX2DdnqkaPWH1rVeSeby7Cj2VdjRt79S9kKLvXR7"];
+    NSData* signature=[privateKey sign:[message dataUsingEncoding:NSUTF8StringEncoding]];
+    NSLog(@"signature:%@",BTCHexFromData(signature));
 }
 
 @end

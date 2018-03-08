@@ -27,4 +27,5 @@
 -(NSString*)toWif;
 -(PublicKey*)getPublic;
 -(NSData*)sharedSecret:(PublicKey*)publicKey;
+-(NSData*)sign:(NSData*)data;
 @end
