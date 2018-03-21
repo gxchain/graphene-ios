@@ -15,7 +15,8 @@
 @property (nonatomic,strong) SRWebSocket* socket;
 @property (nonatomic,assign) BOOL connected;
 @property (nonatomic,readwrite,copy) void(^connctCallback)(BOOL connected,NSString* status);
-@property (nonatomic,strong) NSMutableDictionary* callbackMaps;
+@property (atomic,strong) NSMutableDictionary* callbackMaps;
+@property (atomic,strong) NSMutableDictionary* broadcastCallbackMaps;
 @property (nonatomic,strong) NSTimer* timeoutTimer;
 @property (nonatomic,assign) BOOL connectTimeout;
 @end
@@ -25,6 +26,7 @@
     self=[self init];
     cbId=0;
     self.callbackMaps=[NSMutableDictionary dictionary];
+    self.broadcastCallbackMaps=[NSMutableDictionary dictionary];
     self.socket=[[SRWebSocket alloc] initWithURL:[NSURL URLWithString:address]];
     self.socket.delegate=self;
     [self.socket open];
@@ -60,6 +62,15 @@
     else{
         NSString* _cbId = [NSString stringWithFormat:@"%u",++cbId];
         [self.callbackMaps setObject:callback forKey:_cbId];
+        NSString* method = params[1];
+        if([method isEqualToString:@"broadcast_transaction_with_callback"]){
+            id bradcast_callback = params[2][0];
+            [self.broadcastCallbackMaps setObject:bradcast_callback forKey:_cbId];
+            NSMutableArray* mutableParams= params.mutableCopy;
+            mutableParams[2]=@[_cbId,params[2][1]];
+            params=mutableParams;
+        }
+        
         NSDictionary* request=@{@"method":@"call",@"params":params,@"id":_cbId};
         NSError *error;
         NSData *jsonData = [NSJSONSerialization dataWithJSONObject:request
@@ -92,17 +103,25 @@
 
 #pragma mark - websocket delegate methods
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message{
-    NSLog(@">>%@",message);
+    NSLog(@"\n>>%@\n",message);
     NSError* error;
     NSDictionary *string2dic = [NSJSONSerialization JSONObjectWithData: [message dataUsingEncoding:NSUTF8StringEncoding]
                                                                options: NSJSONReadingMutableContainers
                                                                  error: &error];
     if([string2dic objectForKey:@"id"]){
         NSString* _cbId = [[string2dic objectForKey:@"id"] stringValue];
-        void(^cb)(BOOL connected,NSString* status) = [self.callbackMaps objectForKey:_cbId];
+        void(^cb)(NSError*,id result) = [self.callbackMaps objectForKey:_cbId];
         if(cb){
             cb(nil,string2dic[@"result"]);
             [self.callbackMaps removeObjectForKey:_cbId];
+        }
+    }
+    else if([[string2dic objectForKey:@"method"] isEqualToString:@"notice"]){
+        NSString* _cbId = [string2dic[@"params"][0] stringValue];
+        void(^cb)(NSError*,id result) = [self.broadcastCallbackMaps objectForKey:_cbId];
+        if(cb){
+            cb(nil,string2dic[@"params"][1]);
+            [self.broadcastCallbackMaps removeObjectForKey:_cbId];
         }
     }
 }

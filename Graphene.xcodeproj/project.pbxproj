@@ -13,8 +13,16 @@
 		1D08BD2C204807B200328C0F /* libcrypto-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D08BD2A204807B200328C0F /* libcrypto-ios.a */; };
 		1D08BD2E2048089B00328C0F /* PublicKeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08BD2D2048089B00328C0F /* PublicKeyTests.m */; };
 		1D08BD3020480C0100328C0F /* PrivateKeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08BD2F20480C0100328C0F /* PrivateKeyTests.m */; };
+		1D20E05C20515CF1008C82AD /* BaseOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D20E05A20515CF1008C82AD /* BaseOperation.h */; };
+		1D20E05D20515CF1008C82AD /* BaseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D20E05B20515CF1008C82AD /* BaseOperation.m */; };
 		1D33F7FC202B657F005806F2 /* Graphene.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D33F7FA202B657F005806F2 /* Graphene.h */; };
 		1D33F7FD202B657F005806F2 /* Graphene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D33F7FB202B657F005806F2 /* Graphene.m */; };
+		1D58CAFC20616DC300626C37 /* NSMutableData+ProtoBuff.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D58CAFA20616DC300626C37 /* NSMutableData+ProtoBuff.h */; };
+		1D58CAFD20616DC300626C37 /* NSMutableData+ProtoBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58CAFB20616DC300626C37 /* NSMutableData+ProtoBuff.m */; };
+		1D58CAFF2061712E00626C37 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1D58CAFE2061712E00626C37 /* PrefixHeader.pch */; };
+		1D58CB02206192A800626C37 /* GHAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D58CB00206192A800626C37 /* GHAES.h */; };
+		1D58CB03206192A800626C37 /* GHAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58CB01206192A800626C37 /* GHAES.m */; };
+		1D90828B205B8CDD00BCF55C /* TransactionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90828A205B8CDD00BCF55C /* TransactionTests.m */; };
 		1D92372E204297BC0092A484 /* ChainWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92372C204297BC0092A484 /* ChainWebSocket.h */; };
 		1D92372F204297BC0092A484 /* ChainWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92372D204297BC0092A484 /* ChainWebSocket.m */; };
 		1D923741204539620092A484 /* GrapheneApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92373F204539620092A484 /* GrapheneApi.h */; };
@@ -48,6 +56,17 @@
 		1D9238432046D9160092A484 /* NSData+BTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9238352046D9160092A484 /* NSData+BTCData.m */; };
 		1D92384A2046DC740092A484 /* ChainConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D9238492046DC740092A484 /* ChainConfig.h */; };
 		1DD8491020491ED7006FD274 /* PublicKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D923751204599AA0092A484 /* PublicKey.h */; };
+		1DFEA53B205A6E86002C7FC9 /* TransferOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA539205A6E86002C7FC9 /* TransferOperation.h */; };
+		1DFEA53C205A6E86002C7FC9 /* TransferOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEA53A205A6E86002C7FC9 /* TransferOperation.m */; };
+		1DFEA540205A824A002C7FC9 /* SerializeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA53E205A824A002C7FC9 /* SerializeDelegate.h */; };
+		1DFEA544205A849C002C7FC9 /* AssetAmount.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA542205A849C002C7FC9 /* AssetAmount.h */; };
+		1DFEA545205A849C002C7FC9 /* AssetAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEA543205A849C002C7FC9 /* AssetAmount.m */; };
+		1DFEA54C205A97B9002C7FC9 /* MemoData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA54A205A97B9002C7FC9 /* MemoData.h */; };
+		1DFEA54D205A97B9002C7FC9 /* MemoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEA54B205A97B9002C7FC9 /* MemoData.m */; };
+		1DFEA552205ACDEB002C7FC9 /* NSDictionary+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEA54E205ACDEA002C7FC9 /* NSDictionary+Expand.m */; };
+		1DFEA553205ACDEB002C7FC9 /* NSArray+Expand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA54F205ACDEA002C7FC9 /* NSArray+Expand.h */; };
+		1DFEA554205ACDEB002C7FC9 /* NSDictionary+Expand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA550205ACDEB002C7FC9 /* NSDictionary+Expand.h */; };
+		1DFEA555205ACDEB002C7FC9 /* NSArray+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEA551205ACDEB002C7FC9 /* NSArray+Expand.m */; };
 		2847BF29F7EABA089991317A /* libPods-Graphene.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DC86B66AAEE0A1D3F7E2F4 /* libPods-Graphene.a */; };
 		B8ABA744519B7F66D5F52418 /* libPods-GrapheneTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5786C712C70F47D5990F4E61 /* libPods-GrapheneTests.a */; };
 /* End PBXBuildFile section */
@@ -71,11 +90,19 @@
 		1D08BD2A204807B200328C0F /* libcrypto-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-ios.a"; path = "GrapheneTests/includes/lib/libcrypto-ios.a"; sourceTree = "<group>"; };
 		1D08BD2D2048089B00328C0F /* PublicKeyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicKeyTests.m; sourceTree = "<group>"; };
 		1D08BD2F20480C0100328C0F /* PrivateKeyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateKeyTests.m; sourceTree = "<group>"; };
+		1D20E05A20515CF1008C82AD /* BaseOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseOperation.h; sourceTree = "<group>"; };
+		1D20E05B20515CF1008C82AD /* BaseOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseOperation.m; sourceTree = "<group>"; };
 		1D33F7EB202B5694005806F2 /* Graphene.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Graphene.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D33F7EF202B5694005806F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D33F7F7202B64B1005806F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		1D33F7FA202B657F005806F2 /* Graphene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graphene.h; sourceTree = "<group>"; };
 		1D33F7FB202B657F005806F2 /* Graphene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Graphene.m; sourceTree = "<group>"; };
+		1D58CAFA20616DC300626C37 /* NSMutableData+ProtoBuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+ProtoBuff.h"; sourceTree = "<group>"; };
+		1D58CAFB20616DC300626C37 /* NSMutableData+ProtoBuff.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+ProtoBuff.m"; sourceTree = "<group>"; };
+		1D58CAFE2061712E00626C37 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1D58CB00206192A800626C37 /* GHAES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHAES.h; sourceTree = "<group>"; };
+		1D58CB01206192A800626C37 /* GHAES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHAES.m; sourceTree = "<group>"; };
+		1D90828A205B8CDD00BCF55C /* TransactionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionTests.m; sourceTree = "<group>"; };
 		1D92372C204297BC0092A484 /* ChainWebSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainWebSocket.h; sourceTree = "<group>"; };
 		1D92372D204297BC0092A484 /* ChainWebSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChainWebSocket.m; sourceTree = "<group>"; };
 		1D92373F204539620092A484 /* GrapheneApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrapheneApi.h; sourceTree = "<group>"; };
@@ -112,6 +139,17 @@
 		1D9238492046DC740092A484 /* ChainConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainConfig.h; sourceTree = "<group>"; };
 		1DFDC0AB2047C7B200DCC11A /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
 		1DFDC0AC2047C7B200DCC11A /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		1DFEA539205A6E86002C7FC9 /* TransferOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferOperation.h; sourceTree = "<group>"; };
+		1DFEA53A205A6E86002C7FC9 /* TransferOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferOperation.m; sourceTree = "<group>"; };
+		1DFEA53E205A824A002C7FC9 /* SerializeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerializeDelegate.h; sourceTree = "<group>"; };
+		1DFEA542205A849C002C7FC9 /* AssetAmount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetAmount.h; sourceTree = "<group>"; };
+		1DFEA543205A849C002C7FC9 /* AssetAmount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetAmount.m; sourceTree = "<group>"; };
+		1DFEA54A205A97B9002C7FC9 /* MemoData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoData.h; sourceTree = "<group>"; };
+		1DFEA54B205A97B9002C7FC9 /* MemoData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoData.m; sourceTree = "<group>"; };
+		1DFEA54E205ACDEA002C7FC9 /* NSDictionary+Expand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Expand.m"; sourceTree = "<group>"; };
+		1DFEA54F205ACDEA002C7FC9 /* NSArray+Expand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Expand.h"; sourceTree = "<group>"; };
+		1DFEA550205ACDEB002C7FC9 /* NSDictionary+Expand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Expand.h"; sourceTree = "<group>"; };
+		1DFEA551205ACDEB002C7FC9 /* NSArray+Expand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Expand.m"; sourceTree = "<group>"; };
 		30DC86B66AAEE0A1D3F7E2F4 /* libPods-Graphene.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Graphene.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3805D3DB9C7A732554F502DA /* Pods-Graphene.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graphene.release.xcconfig"; path = "Pods/Target Support Files/Pods-Graphene/Pods-Graphene.release.xcconfig"; sourceTree = "<group>"; };
 		513231D46C38065AA36BE70D /* Pods-GrapheneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrapheneTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrapheneTests/Pods-GrapheneTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,8 +192,31 @@
 				1D08BD222047E25200328C0F /* Info.plist */,
 				1D08BD2D2048089B00328C0F /* PublicKeyTests.m */,
 				1D08BD2F20480C0100328C0F /* PrivateKeyTests.m */,
+				1D90828A205B8CDD00BCF55C /* TransactionTests.m */,
 			);
 			path = GrapheneTests;
+			sourceTree = "<group>";
+		};
+		1D20E05920515CC2008C82AD /* operations */ = {
+			isa = PBXGroup;
+			children = (
+				1D20E05A20515CF1008C82AD /* BaseOperation.h */,
+				1D20E05B20515CF1008C82AD /* BaseOperation.m */,
+				1DFEA539205A6E86002C7FC9 /* TransferOperation.h */,
+				1DFEA53A205A6E86002C7FC9 /* TransferOperation.m */,
+			);
+			path = operations;
+			sourceTree = "<group>";
+		};
+		1D20E05E205160C9008C82AD /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				1DFEA542205A849C002C7FC9 /* AssetAmount.h */,
+				1DFEA543205A849C002C7FC9 /* AssetAmount.m */,
+				1DFEA54A205A97B9002C7FC9 /* MemoData.h */,
+				1DFEA54B205A97B9002C7FC9 /* MemoData.m */,
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 		1D33F7E1202B5694005806F2 = {
@@ -211,6 +272,7 @@
 				1D33F7FA202B657F005806F2 /* Graphene.h */,
 				1D33F7FB202B657F005806F2 /* Graphene.m */,
 				1D92374F204599540092A484 /* chain */,
+				1D58CAFE2061712E00626C37 /* PrefixHeader.pch */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -234,6 +296,9 @@
 		1D92374F204599540092A484 /* chain */ = {
 			isa = PBXGroup;
 			children = (
+				1DFEA53D205A8184002C7FC9 /* delegates */,
+				1D20E05E205160C9008C82AD /* classes */,
+				1D20E05920515CC2008C82AD /* operations */,
 				1D92374B20458E3A0092A484 /* TransactionBuilder.h */,
 				1D92374C20458E3A0092A484 /* TransactionBuilder.m */,
 			);
@@ -248,6 +313,8 @@
 				1D923752204599AA0092A484 /* PublicKey.m */,
 				1D923755204599BB0092A484 /* PrivateKey.h */,
 				1D923756204599BB0092A484 /* PrivateKey.m */,
+				1D58CB00206192A800626C37 /* GHAES.h */,
+				1D58CB01206192A800626C37 /* GHAES.m */,
 			);
 			path = ecc;
 			sourceTree = "<group>";
@@ -273,10 +340,16 @@
 		1D92380020469AAC0092A484 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				1DFEA54F205ACDEA002C7FC9 /* NSArray+Expand.h */,
+				1DFEA551205ACDEB002C7FC9 /* NSArray+Expand.m */,
+				1DFEA550205ACDEB002C7FC9 /* NSDictionary+Expand.h */,
+				1DFEA54E205ACDEA002C7FC9 /* NSDictionary+Expand.m */,
 				1D92380120469AAC0092A484 /* NSString+Base64.m */,
 				1D92380220469AAC0092A484 /* NSData+Base64.h */,
 				1D92380320469AAC0092A484 /* NSString+Base64.h */,
 				1D92380420469AAC0092A484 /* NSData+Base64.m */,
+				1D58CAFA20616DC300626C37 /* NSMutableData+ProtoBuff.h */,
+				1D58CAFB20616DC300626C37 /* NSMutableData+ProtoBuff.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -310,6 +383,14 @@
 			path = GrapheneTest/openssl;
 			sourceTree = "<group>";
 		};
+		1DFEA53D205A8184002C7FC9 /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				1DFEA53E205A824A002C7FC9 /* SerializeDelegate.h */,
+			);
+			path = delegates;
+			sourceTree = "<group>";
+		};
 		FCAAF88528F739BF81CBFBD3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,21 +411,31 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DFEA54C205A97B9002C7FC9 /* MemoData.h in Headers */,
+				1D58CAFC20616DC300626C37 /* NSMutableData+ProtoBuff.h in Headers */,
 				1D92380620469AAD0092A484 /* NSData+Base64.h in Headers */,
+				1DFEA553205ACDEB002C7FC9 /* NSArray+Expand.h in Headers */,
 				1D923745204543830092A484 /* ConnectionManager.h in Headers */,
 				1D92374920454DAD0092A484 /* ApiInstances.h in Headers */,
+				1D20E05C20515CF1008C82AD /* BaseOperation.h in Headers */,
 				1D92380720469AAD0092A484 /* NSString+Base64.h in Headers */,
 				1D92383D2046D9160092A484 /* BTCCurvePoint.h in Headers */,
+				1DFEA544205A849C002C7FC9 /* AssetAmount.h in Headers */,
 				1D92372E204297BC0092A484 /* ChainWebSocket.h in Headers */,
 				1D33F7FC202B657F005806F2 /* Graphene.h in Headers */,
+				1D58CB02206192A800626C37 /* GHAES.h in Headers */,
+				1DFEA53B205A6E86002C7FC9 /* TransferOperation.h in Headers */,
 				1D9238362046D9160092A484 /* BTCBase58.h in Headers */,
 				1D92383C2046D9160092A484 /* BTCBigNumber.h in Headers */,
 				1DD8491020491ED7006FD274 /* PublicKey.h in Headers */,
+				1D58CAFF2061712E00626C37 /* PrefixHeader.pch in Headers */,
 				1D923741204539620092A484 /* GrapheneApi.h in Headers */,
 				1D92384A2046DC740092A484 /* ChainConfig.h in Headers */,
 				1D923757204599BB0092A484 /* PrivateKey.h in Headers */,
 				1D9238392046D9160092A484 /* BTCData.h in Headers */,
+				1DFEA540205A824A002C7FC9 /* SerializeDelegate.h in Headers */,
 				1D92374D20458E3A0092A484 /* TransactionBuilder.h in Headers */,
+				1DFEA554205ACDEB002C7FC9 /* NSDictionary+Expand.h in Headers */,
 				1D9238422046D9160092A484 /* NSData+BTCData.h in Headers */,
 				1D92383E2046D9160092A484 /* NS+BTCBase58.h in Headers */,
 			);
@@ -539,6 +630,7 @@
 			files = (
 				1D08BD3020480C0100328C0F /* PrivateKeyTests.m in Sources */,
 				1D08BD2E2048089B00328C0F /* PublicKeyTests.m in Sources */,
+				1D90828B205B8CDD00BCF55C /* TransactionTests.m in Sources */,
 				1D08BD212047E25200328C0F /* ConnectionManagerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,9 +639,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D20E05D20515CF1008C82AD /* BaseOperation.m in Sources */,
 				1D92383B2046D9160092A484 /* NS+BTCBase58.m in Sources */,
+				1DFEA555205ACDEB002C7FC9 /* NSArray+Expand.m in Sources */,
 				1D92383F2046D9160092A484 /* BTCData.m in Sources */,
 				1D9238372046D9160092A484 /* BTCBigNumber.m in Sources */,
+				1DFEA545205A849C002C7FC9 /* AssetAmount.m in Sources */,
 				1D92374E20458E3A0092A484 /* TransactionBuilder.m in Sources */,
 				1D92374A20454DAD0092A484 /* ApiInstances.m in Sources */,
 				1D33F7FD202B657F005806F2 /* Graphene.m in Sources */,
@@ -557,11 +652,16 @@
 				1D9238432046D9160092A484 /* NSData+BTCData.m in Sources */,
 				1D923758204599BB0092A484 /* PrivateKey.m in Sources */,
 				1D92380520469AAD0092A484 /* NSString+Base64.m in Sources */,
+				1DFEA552205ACDEB002C7FC9 /* NSDictionary+Expand.m in Sources */,
 				1D923746204543830092A484 /* ConnectionManager.m in Sources */,
 				1D92372F204297BC0092A484 /* ChainWebSocket.m in Sources */,
+				1DFEA54D205A97B9002C7FC9 /* MemoData.m in Sources */,
+				1D58CAFD20616DC300626C37 /* NSMutableData+ProtoBuff.m in Sources */,
+				1D58CB03206192A800626C37 /* GHAES.m in Sources */,
 				1D92383A2046D9160092A484 /* BTCCurvePoint.m in Sources */,
 				1D923754204599AA0092A484 /* PublicKey.m in Sources */,
 				1D923742204539620092A484 /* GrapheneApi.m in Sources */,
+				1DFEA53C205A6E86002C7FC9 /* TransferOperation.m in Sources */,
 				1D9238382046D9160092A484 /* BTCBase58.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -753,6 +853,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = Graphene/lib/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -798,6 +899,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = Graphene/lib/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",

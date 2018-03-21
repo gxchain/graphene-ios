@@ -7,7 +7,6 @@
 //
 
 #import "PrivateKey.h"
-#import <ASKSecp256k1/CKSecp256k1.h>
 #import "BTCBigNumber.h"
 
 static int BTCRegenerateKey(EC_KEY *eckey, BIGNUM *priv_key);

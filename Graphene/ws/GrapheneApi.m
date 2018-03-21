@@ -49,6 +49,5 @@
             callback(error,response);
         }];
     }
-    
 }
 @end

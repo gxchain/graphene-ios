@@ -27,7 +27,6 @@
 
 - (void)testConnect {
     XCTestExpectation * expectation = [self expectationWithDescription:@"Connection Exception"];
-    NSLog(@"%lu",sizeof(uint8_t));
     [[ConnectionManager sharedInstance] connectWithFallback:@[@"wss://node1.gxb.io",@"wss://node5.gxb.io",@"wss://node8.gxb.io",@"wss://node11.gxb.io",@"wss://node18.gxb.io"] callback:^(BOOL connected, NSString *url) {
         if(connected){
             NSLog(@"Conncted to:%@",url);
