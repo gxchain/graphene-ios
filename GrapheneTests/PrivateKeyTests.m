@@ -8,7 +8,6 @@
 
 #import <XCTest/XCTest.h>
 #import "PrivateKey.h"
-#import <ASKSecp256k1/CKSecp256k1.h>
 
 @interface PrivateKeyTests : XCTestCase
 
