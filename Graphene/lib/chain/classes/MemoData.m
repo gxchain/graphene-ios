@@ -59,7 +59,7 @@ uint64_t unique_nonce_uint64(){
         [result appendData:[[PublicKey fromString:_to] curvePoint].data];
     }
     [result appendBytes:&_nonce length:sizeof(_nonce)];
-    [result writeVarInt32:_message.length];
+    [result writeVarInt32:(int32_t)(_message.length)];
     [result appendData:_message];
     return result;
 }
