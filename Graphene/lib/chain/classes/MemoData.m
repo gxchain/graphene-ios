@@ -14,21 +14,20 @@
 #import "GHAES.h"
 
 uint64_t unique_nonce_uint64(){
-    return 389533770365849;
-//    FILE *fp = fopen("/dev/random", "r");
-//    if (!fp) {
-//        perror("randgetter");
-//        exit(-1);
-//    }
-//
-//    uint64_t value = 0;
-//    int i;
-//    for (i=0; i<sizeof(value); i++) {
-//        uint8_t c = fgetc(fp);
-//        value |= (c << (8 * i));
-//    }
-//    fclose(fp);
-//    return value;
+    FILE *fp = fopen("/dev/random", "r");
+    if (!fp) {
+        perror("randgetter");
+        exit(-1);
+    }
+
+    uint64_t value = 0;
+    int i;
+    for (i=0; i<sizeof(value); i++) {
+        uint8_t c = fgetc(fp);
+        value |= (c << (8 * i));
+    }
+    fclose(fp);
+    return value;
 }
 
 @implementation MemoData

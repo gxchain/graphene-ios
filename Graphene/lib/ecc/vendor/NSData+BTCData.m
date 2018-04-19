@@ -41,14 +41,7 @@
     return BTCUppercaseHexFromData(self);
 }
 
-
-
-
-
 #pragma mark - Encryption / Decryption
-
-
-
 
 + (NSMutableData*) encryptData:(NSData*)data key:(NSData*)key iv:(NSData*)initializationVector {
     return [self cryptData:data key:key iv:initializationVector operation:kCCEncrypt];
