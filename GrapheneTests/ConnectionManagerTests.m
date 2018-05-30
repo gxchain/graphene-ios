@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "ConnectionManager.h"
+#import "ApiInstances.h"
 
 @interface ConnectionManagerTests : XCTestCase
 
@@ -31,7 +32,11 @@
         if(connected){
             NSLog(@"Conncted to:%@",url);
         }
-        [expectation fulfill];
+        [[ApiInstances sharedInstance]._db exec:@"get_objects" params:@[@[@"2.1.0"]] callback:^(NSError *err, id resp) {
+            NSLog(@"%@",resp);
+            [expectation fulfill];
+        }];
+        
     }];
     [self waitForExpectationsWithTimeout:60 handler:^(NSError *error) {
         NSLog(@"%@",error.localizedDescription);
