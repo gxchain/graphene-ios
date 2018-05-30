@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name               = 'Graphene'
   s.version            = '0.0.1'
-  s.summary            = 'Graphene is an implementation of Graphene protocol in Objective-C.'
+  s.summary            = 'Graphene is an implementation of Graphene Blockchain protocol in Objective-C.'
     s.description  = <<-DESC
                    Graphene is a toolkit to work with Graphene blockchain.
                    DESC
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source             = { :git => 'https://github.com/gxchain/Graphene.git', :tag => s.version.to_s }
   s.ios.deployment_target = '7.0'
   s.osx.deployment_target = '10.9'
-  s.source_files = 'Graphene'
+  s.source_files = 'Graphene/**/*.{h,m}'
   s.public_header_files = 'Graphene/**/*.h'
   s.exclude_files = ['GrapheneTests/**/*.{h,m}']
   s.requires_arc  = true
