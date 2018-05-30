@@ -15,7 +15,6 @@
 		1D20E05D20515CF1008C82AD /* BaseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D20E05B20515CF1008C82AD /* BaseOperation.m */; };
 		1D58CAFC20616DC300626C37 /* NSMutableData+ProtoBuff.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D58CAFA20616DC300626C37 /* NSMutableData+ProtoBuff.h */; };
 		1D58CAFD20616DC300626C37 /* NSMutableData+ProtoBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58CAFB20616DC300626C37 /* NSMutableData+ProtoBuff.m */; };
-		1D58CAFF2061712E00626C37 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1D58CAFE2061712E00626C37 /* PrefixHeader.pch */; };
 		1D58CB02206192A800626C37 /* GHAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D58CB00206192A800626C37 /* GHAES.h */; };
 		1D58CB03206192A800626C37 /* GHAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58CB01206192A800626C37 /* GHAES.m */; };
 		1D90828B205B8CDD00BCF55C /* TransactionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90828A205B8CDD00BCF55C /* TransactionTests.m */; };
@@ -89,7 +88,6 @@
 		1D33F7F7202B64B1005806F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		1D58CAFA20616DC300626C37 /* NSMutableData+ProtoBuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+ProtoBuff.h"; sourceTree = "<group>"; };
 		1D58CAFB20616DC300626C37 /* NSMutableData+ProtoBuff.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+ProtoBuff.m"; sourceTree = "<group>"; };
-		1D58CAFE2061712E00626C37 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1D58CB00206192A800626C37 /* GHAES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHAES.h; sourceTree = "<group>"; };
 		1D58CB01206192A800626C37 /* GHAES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHAES.m; sourceTree = "<group>"; };
 		1D90828A205B8CDD00BCF55C /* TransactionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionTests.m; sourceTree = "<group>"; };
@@ -245,7 +243,6 @@
 			children = (
 				1D9237502045996D0092A484 /* ecc */,
 				1D92374F204599540092A484 /* chain */,
-				1D58CAFE2061712E00626C37 /* PrefixHeader.pch */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -372,7 +369,6 @@
 				1D9238362046D9160092A484 /* BTCBase58.h in Headers */,
 				1D92383C2046D9160092A484 /* BTCBigNumber.h in Headers */,
 				1DD8491020491ED7006FD274 /* PublicKey.h in Headers */,
-				1D58CAFF2061712E00626C37 /* PrefixHeader.pch in Headers */,
 				1D923741204539620092A484 /* GrapheneApi.h in Headers */,
 				1D92384A2046DC740092A484 /* ChainConfig.h in Headers */,
 				1D923757204599BB0092A484 /* PrivateKey.h in Headers */,
@@ -806,7 +802,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = Graphene/lib/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -848,7 +844,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = Graphene/lib/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",

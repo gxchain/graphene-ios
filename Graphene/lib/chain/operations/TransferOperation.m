@@ -8,6 +8,7 @@
 
 #import "TransferOperation.h"
 #import "BTCData.h"
+#import "NSMutableData+ProtoBuff.h"
 @interface TransferOperation()
 @end
 

@@ -12,6 +12,7 @@
 #import "PrivateKey.h"
 #import "BTCData.h"
 #import "GHAES.h"
+#import "NSMutableData+ProtoBuff.h"
 
 uint64_t unique_nonce_uint64(){
     FILE *fp = fopen("/dev/random", "r");

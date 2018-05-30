@@ -7,6 +7,7 @@
 //
 
 #import "AssetAmount.h"
+#import "NSMutableData+ProtoBuff.h"
 
 @implementation AssetAmount
 

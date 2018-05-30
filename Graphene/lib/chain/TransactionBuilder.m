@@ -10,6 +10,7 @@
 #import "NSArray+Expand.h"
 #import "NSDictionary+Expand.h"
 #import "ChainConfig.h"
+#import "NSMutableData+ProtoBuff.h"
 
 @interface TransactionBuilder()
 @property(nonatomic,strong) NSMutableArray<PrivateKey*>* signer_private_keys;
