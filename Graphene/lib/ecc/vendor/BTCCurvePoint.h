@@ -8,7 +8,7 @@
 // Private key is a big integer (represented by raw NSData or BTCBigNumber).
 // Public key is a point on the curve represented by BTCCurvePoint or BTCKey.
 // BTCCurvePoint is mutable. There is no immutable counterpart.
-@class BTCKey;
+//@class BTCKey;
 @class BTCBigNumber;
 @interface BTCCurvePoint : NSObject <NSCopying>
 

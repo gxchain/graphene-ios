@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name               = 'Graphene'
-  s.version            = '1.1.1'
+  s.version            = '1.1.2'
   s.summary            = 'Graphene is an implementation of Graphene Blockchain protocol in Objective-C.'
     s.description  = <<-DESC
                    Graphene is a toolkit to work with Graphene blockchain.

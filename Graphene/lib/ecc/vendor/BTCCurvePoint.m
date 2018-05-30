@@ -1,7 +1,7 @@
 // Oleg Andreev <oleganza@gmail.com>
 
 #import "BTCCurvePoint.h"
-#import "BTCKey.h"
+//#import "BTCKey.h"
 #import "BTCData.h"
 #import "BTCBigNumber.h"
 #include <openssl/bn.h>
