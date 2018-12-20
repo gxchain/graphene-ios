@@ -7,30 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D08BD212047E25200328C0F /* ConnectionManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08BD202047E25200328C0F /* ConnectionManagerTests.m */; };
+		1D08BD212047E25200328C0F /* GXConnectionManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08BD202047E25200328C0F /* GXConnectionManagerTests.m */; };
 		1D08BD232047E25200328C0F /* Graphene.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D33F7EB202B5694005806F2 /* Graphene.framework */; };
-		1D08BD2E2048089B00328C0F /* PublicKeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08BD2D2048089B00328C0F /* PublicKeyTests.m */; };
-		1D08BD3020480C0100328C0F /* PrivateKeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08BD2F20480C0100328C0F /* PrivateKeyTests.m */; };
-		1D20E05C20515CF1008C82AD /* BaseOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D20E05A20515CF1008C82AD /* BaseOperation.h */; };
-		1D20E05D20515CF1008C82AD /* BaseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D20E05B20515CF1008C82AD /* BaseOperation.m */; };
+		1D08BD2E2048089B00328C0F /* GXPublicKeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08BD2D2048089B00328C0F /* GXPublicKeyTests.m */; };
+		1D08BD3020480C0100328C0F /* GXPrivateKeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08BD2F20480C0100328C0F /* GXPrivateKeyTests.m */; };
+		1D20E05C20515CF1008C82AD /* GXBaseOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D20E05A20515CF1008C82AD /* GXBaseOperation.h */; };
+		1D20E05D20515CF1008C82AD /* GXBaseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D20E05B20515CF1008C82AD /* GXBaseOperation.m */; };
 		1D58CAFC20616DC300626C37 /* NSMutableData+ProtoBuff.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D58CAFA20616DC300626C37 /* NSMutableData+ProtoBuff.h */; };
 		1D58CAFD20616DC300626C37 /* NSMutableData+ProtoBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58CAFB20616DC300626C37 /* NSMutableData+ProtoBuff.m */; };
-		1D58CB02206192A800626C37 /* GHAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D58CB00206192A800626C37 /* GHAES.h */; };
-		1D58CB03206192A800626C37 /* GHAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58CB01206192A800626C37 /* GHAES.m */; };
-		1D90828B205B8CDD00BCF55C /* TransactionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90828A205B8CDD00BCF55C /* TransactionTests.m */; };
-		1D92372E204297BC0092A484 /* ChainWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92372C204297BC0092A484 /* ChainWebSocket.h */; };
-		1D92372F204297BC0092A484 /* ChainWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92372D204297BC0092A484 /* ChainWebSocket.m */; };
-		1D923741204539620092A484 /* GrapheneApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92373F204539620092A484 /* GrapheneApi.h */; };
-		1D923742204539620092A484 /* GrapheneApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D923740204539620092A484 /* GrapheneApi.m */; };
-		1D923745204543830092A484 /* ConnectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D923743204543830092A484 /* ConnectionManager.h */; };
-		1D923746204543830092A484 /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D923744204543830092A484 /* ConnectionManager.m */; };
-		1D92374920454DAD0092A484 /* ApiInstances.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92374720454DAD0092A484 /* ApiInstances.h */; };
-		1D92374A20454DAD0092A484 /* ApiInstances.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92374820454DAD0092A484 /* ApiInstances.m */; };
-		1D92374D20458E3A0092A484 /* TransactionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92374B20458E3A0092A484 /* TransactionBuilder.h */; };
-		1D92374E20458E3A0092A484 /* TransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92374C20458E3A0092A484 /* TransactionBuilder.m */; };
-		1D923754204599AA0092A484 /* PublicKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D923752204599AA0092A484 /* PublicKey.m */; };
-		1D923757204599BB0092A484 /* PrivateKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D923755204599BB0092A484 /* PrivateKey.h */; };
-		1D923758204599BB0092A484 /* PrivateKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D923756204599BB0092A484 /* PrivateKey.m */; };
+		1D58CB02206192A800626C37 /* GXAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D58CB00206192A800626C37 /* GXAES.h */; };
+		1D58CB03206192A800626C37 /* GXAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58CB01206192A800626C37 /* GXAES.m */; };
+		1D90828B205B8CDD00BCF55C /* GXTransactionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90828A205B8CDD00BCF55C /* GXTransactionTests.m */; };
+		1D92372E204297BC0092A484 /* GXChainWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92372C204297BC0092A484 /* GXChainWebSocket.h */; };
+		1D92372F204297BC0092A484 /* GXChainWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92372D204297BC0092A484 /* GXChainWebSocket.m */; };
+		1D923741204539620092A484 /* GXGrapheneApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92373F204539620092A484 /* GXGrapheneApi.h */; };
+		1D923742204539620092A484 /* GXGrapheneApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D923740204539620092A484 /* GXGrapheneApi.m */; };
+		1D923745204543830092A484 /* GXConnectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D923743204543830092A484 /* GXConnectionManager.h */; };
+		1D923746204543830092A484 /* GXConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D923744204543830092A484 /* GXConnectionManager.m */; };
+		1D92374920454DAD0092A484 /* GXApiInstances.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92374720454DAD0092A484 /* GXApiInstances.h */; };
+		1D92374A20454DAD0092A484 /* GXApiInstances.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92374820454DAD0092A484 /* GXApiInstances.m */; };
+		1D92374D20458E3A0092A484 /* GXTransactionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92374B20458E3A0092A484 /* GXTransactionBuilder.h */; };
+		1D92374E20458E3A0092A484 /* GXTransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92374C20458E3A0092A484 /* GXTransactionBuilder.m */; };
+		1D923754204599AA0092A484 /* GXPublicKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D923752204599AA0092A484 /* GXPublicKey.m */; };
+		1D923757204599BB0092A484 /* GXPrivateKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D923755204599BB0092A484 /* GXPrivateKey.h */; };
+		1D923758204599BB0092A484 /* GXPrivateKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D923756204599BB0092A484 /* GXPrivateKey.m */; };
 		1D92380520469AAD0092A484 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D92380120469AAC0092A484 /* NSString+Base64.m */; };
 		1D92380620469AAD0092A484 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92380220469AAC0092A484 /* NSData+Base64.h */; };
 		1D92380720469AAD0092A484 /* NSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D92380320469AAC0092A484 /* NSString+Base64.h */; };
@@ -47,15 +47,22 @@
 		1D92383F2046D9160092A484 /* BTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9238312046D9150092A484 /* BTCData.m */; };
 		1D9238422046D9160092A484 /* NSData+BTCData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D9238342046D9160092A484 /* NSData+BTCData.h */; };
 		1D9238432046D9160092A484 /* NSData+BTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9238352046D9160092A484 /* NSData+BTCData.m */; };
-		1D92384A2046DC740092A484 /* ChainConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D9238492046DC740092A484 /* ChainConfig.h */; };
-		1DD8491020491ED7006FD274 /* PublicKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D923751204599AA0092A484 /* PublicKey.h */; };
-		1DFEA53B205A6E86002C7FC9 /* TransferOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA539205A6E86002C7FC9 /* TransferOperation.h */; };
-		1DFEA53C205A6E86002C7FC9 /* TransferOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEA53A205A6E86002C7FC9 /* TransferOperation.m */; };
-		1DFEA540205A824A002C7FC9 /* SerializeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA53E205A824A002C7FC9 /* SerializeDelegate.h */; };
-		1DFEA544205A849C002C7FC9 /* AssetAmount.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA542205A849C002C7FC9 /* AssetAmount.h */; };
-		1DFEA545205A849C002C7FC9 /* AssetAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEA543205A849C002C7FC9 /* AssetAmount.m */; };
-		1DFEA54C205A97B9002C7FC9 /* MemoData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA54A205A97B9002C7FC9 /* MemoData.h */; };
-		1DFEA54D205A97B9002C7FC9 /* MemoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEA54B205A97B9002C7FC9 /* MemoData.m */; };
+		1D92384A2046DC740092A484 /* GXChainConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D9238492046DC740092A484 /* GXChainConfig.h */; };
+		1D959CF721BD7ECA0084A068 /* GXCallContractOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D959CF521BD7ECA0084A068 /* GXCallContractOperation.h */; };
+		1D959CF821BD7ECA0084A068 /* GXCallContractOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D959CF621BD7ECA0084A068 /* GXCallContractOperation.m */; };
+		1DBB800B21C0F4AE008993B2 /* GXUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DBB800921C0F4AE008993B2 /* GXUtil.h */; };
+		1DBB800C21C0F4AE008993B2 /* GXUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB800A21C0F4AE008993B2 /* GXUtil.m */; };
+		1DBB801121CA41B5008993B2 /* GXUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB801021CA41B5008993B2 /* GXUtilTest.m */; };
+		1DBB801621CA4A17008993B2 /* Graphene.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1DBB801521CA4A16008993B2 /* Graphene.bundle */; };
+		1DBB801721CA4D8E008993B2 /* Graphene.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1DBB801521CA4A16008993B2 /* Graphene.bundle */; };
+		1DD8491020491ED7006FD274 /* GXPublicKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D923751204599AA0092A484 /* GXPublicKey.h */; };
+		1DFEA53B205A6E86002C7FC9 /* GXTransferOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA539205A6E86002C7FC9 /* GXTransferOperation.h */; };
+		1DFEA53C205A6E86002C7FC9 /* GXTransferOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEA53A205A6E86002C7FC9 /* GXTransferOperation.m */; };
+		1DFEA540205A824A002C7FC9 /* GXSerializeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA53E205A824A002C7FC9 /* GXSerializeDelegate.h */; };
+		1DFEA544205A849C002C7FC9 /* GXAssetAmount.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA542205A849C002C7FC9 /* GXAssetAmount.h */; };
+		1DFEA545205A849C002C7FC9 /* GXAssetAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEA543205A849C002C7FC9 /* GXAssetAmount.m */; };
+		1DFEA54C205A97B9002C7FC9 /* GXMemoData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA54A205A97B9002C7FC9 /* GXMemoData.h */; };
+		1DFEA54D205A97B9002C7FC9 /* GXMemoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEA54B205A97B9002C7FC9 /* GXMemoData.m */; };
 		1DFEA552205ACDEB002C7FC9 /* NSDictionary+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEA54E205ACDEA002C7FC9 /* NSDictionary+Expand.m */; };
 		1DFEA553205ACDEB002C7FC9 /* NSArray+Expand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA54F205ACDEA002C7FC9 /* NSArray+Expand.h */; };
 		1DFEA554205ACDEB002C7FC9 /* NSDictionary+Expand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEA550205ACDEB002C7FC9 /* NSDictionary+Expand.h */; };
@@ -77,34 +84,34 @@
 /* Begin PBXFileReference section */
 		0EF1139DC03A354E3D4EA0EE /* Pods-Graphene.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graphene.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Graphene/Pods-Graphene.debug.xcconfig"; sourceTree = "<group>"; };
 		1D08BD1E2047E25200328C0F /* GrapheneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrapheneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D08BD202047E25200328C0F /* ConnectionManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectionManagerTests.m; sourceTree = "<group>"; };
+		1D08BD202047E25200328C0F /* GXConnectionManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXConnectionManagerTests.m; sourceTree = "<group>"; };
 		1D08BD222047E25200328C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D08BD2D2048089B00328C0F /* PublicKeyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicKeyTests.m; sourceTree = "<group>"; };
-		1D08BD2F20480C0100328C0F /* PrivateKeyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateKeyTests.m; sourceTree = "<group>"; };
-		1D20E05A20515CF1008C82AD /* BaseOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseOperation.h; sourceTree = "<group>"; };
-		1D20E05B20515CF1008C82AD /* BaseOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseOperation.m; sourceTree = "<group>"; };
+		1D08BD2D2048089B00328C0F /* GXPublicKeyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPublicKeyTests.m; sourceTree = "<group>"; };
+		1D08BD2F20480C0100328C0F /* GXPrivateKeyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPrivateKeyTests.m; sourceTree = "<group>"; };
+		1D20E05A20515CF1008C82AD /* GXBaseOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXBaseOperation.h; sourceTree = "<group>"; };
+		1D20E05B20515CF1008C82AD /* GXBaseOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXBaseOperation.m; sourceTree = "<group>"; };
 		1D33F7EB202B5694005806F2 /* Graphene.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Graphene.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D33F7EF202B5694005806F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D33F7F7202B64B1005806F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		1D58CAFA20616DC300626C37 /* NSMutableData+ProtoBuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+ProtoBuff.h"; sourceTree = "<group>"; };
 		1D58CAFB20616DC300626C37 /* NSMutableData+ProtoBuff.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+ProtoBuff.m"; sourceTree = "<group>"; };
-		1D58CB00206192A800626C37 /* GHAES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHAES.h; sourceTree = "<group>"; };
-		1D58CB01206192A800626C37 /* GHAES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHAES.m; sourceTree = "<group>"; };
-		1D90828A205B8CDD00BCF55C /* TransactionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionTests.m; sourceTree = "<group>"; };
-		1D92372C204297BC0092A484 /* ChainWebSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainWebSocket.h; sourceTree = "<group>"; };
-		1D92372D204297BC0092A484 /* ChainWebSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChainWebSocket.m; sourceTree = "<group>"; };
-		1D92373F204539620092A484 /* GrapheneApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrapheneApi.h; sourceTree = "<group>"; };
-		1D923740204539620092A484 /* GrapheneApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrapheneApi.m; sourceTree = "<group>"; };
-		1D923743204543830092A484 /* ConnectionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectionManager.h; sourceTree = "<group>"; };
-		1D923744204543830092A484 /* ConnectionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectionManager.m; sourceTree = "<group>"; };
-		1D92374720454DAD0092A484 /* ApiInstances.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiInstances.h; sourceTree = "<group>"; };
-		1D92374820454DAD0092A484 /* ApiInstances.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiInstances.m; sourceTree = "<group>"; };
-		1D92374B20458E3A0092A484 /* TransactionBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionBuilder.h; sourceTree = "<group>"; };
-		1D92374C20458E3A0092A484 /* TransactionBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionBuilder.m; sourceTree = "<group>"; };
-		1D923751204599AA0092A484 /* PublicKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicKey.h; sourceTree = "<group>"; };
-		1D923752204599AA0092A484 /* PublicKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicKey.m; sourceTree = "<group>"; };
-		1D923755204599BB0092A484 /* PrivateKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateKey.h; sourceTree = "<group>"; };
-		1D923756204599BB0092A484 /* PrivateKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateKey.m; sourceTree = "<group>"; };
+		1D58CB00206192A800626C37 /* GXAES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXAES.h; sourceTree = "<group>"; };
+		1D58CB01206192A800626C37 /* GXAES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXAES.m; sourceTree = "<group>"; };
+		1D90828A205B8CDD00BCF55C /* GXTransactionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTransactionTests.m; sourceTree = "<group>"; };
+		1D92372C204297BC0092A484 /* GXChainWebSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXChainWebSocket.h; sourceTree = "<group>"; };
+		1D92372D204297BC0092A484 /* GXChainWebSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXChainWebSocket.m; sourceTree = "<group>"; };
+		1D92373F204539620092A484 /* GXGrapheneApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXGrapheneApi.h; sourceTree = "<group>"; };
+		1D923740204539620092A484 /* GXGrapheneApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXGrapheneApi.m; sourceTree = "<group>"; };
+		1D923743204543830092A484 /* GXConnectionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXConnectionManager.h; sourceTree = "<group>"; };
+		1D923744204543830092A484 /* GXConnectionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXConnectionManager.m; sourceTree = "<group>"; };
+		1D92374720454DAD0092A484 /* GXApiInstances.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXApiInstances.h; sourceTree = "<group>"; };
+		1D92374820454DAD0092A484 /* GXApiInstances.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXApiInstances.m; sourceTree = "<group>"; };
+		1D92374B20458E3A0092A484 /* GXTransactionBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXTransactionBuilder.h; sourceTree = "<group>"; };
+		1D92374C20458E3A0092A484 /* GXTransactionBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTransactionBuilder.m; sourceTree = "<group>"; };
+		1D923751204599AA0092A484 /* GXPublicKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPublicKey.h; sourceTree = "<group>"; };
+		1D923752204599AA0092A484 /* GXPublicKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPublicKey.m; sourceTree = "<group>"; };
+		1D923755204599BB0092A484 /* GXPrivateKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPrivateKey.h; sourceTree = "<group>"; };
+		1D923756204599BB0092A484 /* GXPrivateKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPrivateKey.m; sourceTree = "<group>"; };
 		1D92380120469AAC0092A484 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		1D92380220469AAC0092A484 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		1D92380320469AAC0092A484 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
@@ -121,14 +128,20 @@
 		1D9238312046D9150092A484 /* BTCData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCData.m; sourceTree = "<group>"; };
 		1D9238342046D9160092A484 /* NSData+BTCData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BTCData.h"; sourceTree = "<group>"; };
 		1D9238352046D9160092A484 /* NSData+BTCData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+BTCData.m"; sourceTree = "<group>"; };
-		1D9238492046DC740092A484 /* ChainConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainConfig.h; sourceTree = "<group>"; };
-		1DFEA539205A6E86002C7FC9 /* TransferOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferOperation.h; sourceTree = "<group>"; };
-		1DFEA53A205A6E86002C7FC9 /* TransferOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferOperation.m; sourceTree = "<group>"; };
-		1DFEA53E205A824A002C7FC9 /* SerializeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerializeDelegate.h; sourceTree = "<group>"; };
-		1DFEA542205A849C002C7FC9 /* AssetAmount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetAmount.h; sourceTree = "<group>"; };
-		1DFEA543205A849C002C7FC9 /* AssetAmount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetAmount.m; sourceTree = "<group>"; };
-		1DFEA54A205A97B9002C7FC9 /* MemoData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoData.h; sourceTree = "<group>"; };
-		1DFEA54B205A97B9002C7FC9 /* MemoData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoData.m; sourceTree = "<group>"; };
+		1D9238492046DC740092A484 /* GXChainConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXChainConfig.h; sourceTree = "<group>"; };
+		1D959CF521BD7ECA0084A068 /* GXCallContractOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXCallContractOperation.h; sourceTree = "<group>"; };
+		1D959CF621BD7ECA0084A068 /* GXCallContractOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXCallContractOperation.m; sourceTree = "<group>"; };
+		1DBB800921C0F4AE008993B2 /* GXUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXUtil.h; sourceTree = "<group>"; };
+		1DBB800A21C0F4AE008993B2 /* GXUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXUtil.m; sourceTree = "<group>"; };
+		1DBB801021CA41B5008993B2 /* GXUtilTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXUtilTest.m; sourceTree = "<group>"; };
+		1DBB801521CA4A16008993B2 /* Graphene.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Graphene.bundle; sourceTree = "<group>"; };
+		1DFEA539205A6E86002C7FC9 /* GXTransferOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXTransferOperation.h; sourceTree = "<group>"; };
+		1DFEA53A205A6E86002C7FC9 /* GXTransferOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTransferOperation.m; sourceTree = "<group>"; };
+		1DFEA53E205A824A002C7FC9 /* GXSerializeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXSerializeDelegate.h; sourceTree = "<group>"; };
+		1DFEA542205A849C002C7FC9 /* GXAssetAmount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXAssetAmount.h; sourceTree = "<group>"; };
+		1DFEA543205A849C002C7FC9 /* GXAssetAmount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXAssetAmount.m; sourceTree = "<group>"; };
+		1DFEA54A205A97B9002C7FC9 /* GXMemoData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXMemoData.h; sourceTree = "<group>"; };
+		1DFEA54B205A97B9002C7FC9 /* GXMemoData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXMemoData.m; sourceTree = "<group>"; };
 		1DFEA54E205ACDEA002C7FC9 /* NSDictionary+Expand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Expand.m"; sourceTree = "<group>"; };
 		1DFEA54F205ACDEA002C7FC9 /* NSArray+Expand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Expand.h"; sourceTree = "<group>"; };
 		1DFEA550205ACDEB002C7FC9 /* NSDictionary+Expand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Expand.h"; sourceTree = "<group>"; };
@@ -166,11 +179,12 @@
 		1D08BD1F2047E25200328C0F /* GrapheneTests */ = {
 			isa = PBXGroup;
 			children = (
-				1D08BD202047E25200328C0F /* ConnectionManagerTests.m */,
+				1D08BD202047E25200328C0F /* GXConnectionManagerTests.m */,
 				1D08BD222047E25200328C0F /* Info.plist */,
-				1D08BD2D2048089B00328C0F /* PublicKeyTests.m */,
-				1D08BD2F20480C0100328C0F /* PrivateKeyTests.m */,
-				1D90828A205B8CDD00BCF55C /* TransactionTests.m */,
+				1D08BD2D2048089B00328C0F /* GXPublicKeyTests.m */,
+				1D08BD2F20480C0100328C0F /* GXPrivateKeyTests.m */,
+				1D90828A205B8CDD00BCF55C /* GXTransactionTests.m */,
+				1DBB801021CA41B5008993B2 /* GXUtilTest.m */,
 			);
 			path = GrapheneTests;
 			sourceTree = "<group>";
@@ -178,10 +192,12 @@
 		1D20E05920515CC2008C82AD /* operations */ = {
 			isa = PBXGroup;
 			children = (
-				1D20E05A20515CF1008C82AD /* BaseOperation.h */,
-				1D20E05B20515CF1008C82AD /* BaseOperation.m */,
-				1DFEA539205A6E86002C7FC9 /* TransferOperation.h */,
-				1DFEA53A205A6E86002C7FC9 /* TransferOperation.m */,
+				1D20E05A20515CF1008C82AD /* GXBaseOperation.h */,
+				1D20E05B20515CF1008C82AD /* GXBaseOperation.m */,
+				1DFEA539205A6E86002C7FC9 /* GXTransferOperation.h */,
+				1DFEA53A205A6E86002C7FC9 /* GXTransferOperation.m */,
+				1D959CF521BD7ECA0084A068 /* GXCallContractOperation.h */,
+				1D959CF621BD7ECA0084A068 /* GXCallContractOperation.m */,
 			);
 			path = operations;
 			sourceTree = "<group>";
@@ -189,10 +205,10 @@
 		1D20E05E205160C9008C82AD /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				1DFEA542205A849C002C7FC9 /* AssetAmount.h */,
-				1DFEA543205A849C002C7FC9 /* AssetAmount.m */,
-				1DFEA54A205A97B9002C7FC9 /* MemoData.h */,
-				1DFEA54B205A97B9002C7FC9 /* MemoData.m */,
+				1DFEA542205A849C002C7FC9 /* GXAssetAmount.h */,
+				1DFEA543205A849C002C7FC9 /* GXAssetAmount.m */,
+				1DFEA54A205A97B9002C7FC9 /* GXMemoData.h */,
+				1DFEA54B205A97B9002C7FC9 /* GXMemoData.m */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -220,6 +236,7 @@
 		1D33F7ED202B5694005806F2 /* Graphene */ = {
 			isa = PBXGroup;
 			children = (
+				1DBB801521CA4A16008993B2 /* Graphene.bundle */,
 				1D92380020469AAC0092A484 /* category */,
 				1D33F7F9202B650B005806F2 /* ws */,
 				1D33F7F8202B6503005806F2 /* lib */,
@@ -250,15 +267,15 @@
 		1D33F7F9202B650B005806F2 /* ws */ = {
 			isa = PBXGroup;
 			children = (
-				1D92372C204297BC0092A484 /* ChainWebSocket.h */,
-				1D92372D204297BC0092A484 /* ChainWebSocket.m */,
-				1D92373F204539620092A484 /* GrapheneApi.h */,
-				1D923740204539620092A484 /* GrapheneApi.m */,
-				1D923743204543830092A484 /* ConnectionManager.h */,
-				1D923744204543830092A484 /* ConnectionManager.m */,
-				1D92374720454DAD0092A484 /* ApiInstances.h */,
-				1D92374820454DAD0092A484 /* ApiInstances.m */,
-				1D9238492046DC740092A484 /* ChainConfig.h */,
+				1D92372C204297BC0092A484 /* GXChainWebSocket.h */,
+				1D92372D204297BC0092A484 /* GXChainWebSocket.m */,
+				1D92373F204539620092A484 /* GXGrapheneApi.h */,
+				1D923740204539620092A484 /* GXGrapheneApi.m */,
+				1D923743204543830092A484 /* GXConnectionManager.h */,
+				1D923744204543830092A484 /* GXConnectionManager.m */,
+				1D92374720454DAD0092A484 /* GXApiInstances.h */,
+				1D92374820454DAD0092A484 /* GXApiInstances.m */,
+				1D9238492046DC740092A484 /* GXChainConfig.h */,
 			);
 			path = ws;
 			sourceTree = "<group>";
@@ -266,11 +283,12 @@
 		1D92374F204599540092A484 /* chain */ = {
 			isa = PBXGroup;
 			children = (
+				1DBB800821C0F440008993B2 /* utils */,
 				1DFEA53D205A8184002C7FC9 /* delegates */,
 				1D20E05E205160C9008C82AD /* classes */,
 				1D20E05920515CC2008C82AD /* operations */,
-				1D92374B20458E3A0092A484 /* TransactionBuilder.h */,
-				1D92374C20458E3A0092A484 /* TransactionBuilder.m */,
+				1D92374B20458E3A0092A484 /* GXTransactionBuilder.h */,
+				1D92374C20458E3A0092A484 /* GXTransactionBuilder.m */,
 			);
 			path = chain;
 			sourceTree = "<group>";
@@ -279,12 +297,12 @@
 			isa = PBXGroup;
 			children = (
 				1D9238442046D9260092A484 /* vendor */,
-				1D923751204599AA0092A484 /* PublicKey.h */,
-				1D923752204599AA0092A484 /* PublicKey.m */,
-				1D923755204599BB0092A484 /* PrivateKey.h */,
-				1D923756204599BB0092A484 /* PrivateKey.m */,
-				1D58CB00206192A800626C37 /* GHAES.h */,
-				1D58CB01206192A800626C37 /* GHAES.m */,
+				1D923751204599AA0092A484 /* GXPublicKey.h */,
+				1D923752204599AA0092A484 /* GXPublicKey.m */,
+				1D923755204599BB0092A484 /* GXPrivateKey.h */,
+				1D923756204599BB0092A484 /* GXPrivateKey.m */,
+				1D58CB00206192A800626C37 /* GXAES.h */,
+				1D58CB01206192A800626C37 /* GXAES.m */,
 			);
 			path = ecc;
 			sourceTree = "<group>";
@@ -325,10 +343,19 @@
 			path = vendor;
 			sourceTree = "<group>";
 		};
+		1DBB800821C0F440008993B2 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				1DBB800921C0F4AE008993B2 /* GXUtil.h */,
+				1DBB800A21C0F4AE008993B2 /* GXUtil.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		1DFEA53D205A8184002C7FC9 /* delegates */ = {
 			isa = PBXGroup;
 			children = (
-				1DFEA53E205A824A002C7FC9 /* SerializeDelegate.h */,
+				1DFEA53E205A824A002C7FC9 /* GXSerializeDelegate.h */,
 			);
 			path = delegates;
 			sourceTree = "<group>";
@@ -353,28 +380,30 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DFEA54C205A97B9002C7FC9 /* MemoData.h in Headers */,
+				1DFEA54C205A97B9002C7FC9 /* GXMemoData.h in Headers */,
 				1D58CAFC20616DC300626C37 /* NSMutableData+ProtoBuff.h in Headers */,
 				1D92380620469AAD0092A484 /* NSData+Base64.h in Headers */,
 				1DFEA553205ACDEB002C7FC9 /* NSArray+Expand.h in Headers */,
-				1D923745204543830092A484 /* ConnectionManager.h in Headers */,
-				1D92374920454DAD0092A484 /* ApiInstances.h in Headers */,
-				1D20E05C20515CF1008C82AD /* BaseOperation.h in Headers */,
+				1D923745204543830092A484 /* GXConnectionManager.h in Headers */,
+				1D92374920454DAD0092A484 /* GXApiInstances.h in Headers */,
+				1D20E05C20515CF1008C82AD /* GXBaseOperation.h in Headers */,
 				1D92380720469AAD0092A484 /* NSString+Base64.h in Headers */,
 				1D92383D2046D9160092A484 /* BTCCurvePoint.h in Headers */,
-				1DFEA544205A849C002C7FC9 /* AssetAmount.h in Headers */,
-				1D92372E204297BC0092A484 /* ChainWebSocket.h in Headers */,
-				1D58CB02206192A800626C37 /* GHAES.h in Headers */,
-				1DFEA53B205A6E86002C7FC9 /* TransferOperation.h in Headers */,
+				1DFEA544205A849C002C7FC9 /* GXAssetAmount.h in Headers */,
+				1D92372E204297BC0092A484 /* GXChainWebSocket.h in Headers */,
+				1D58CB02206192A800626C37 /* GXAES.h in Headers */,
+				1DFEA53B205A6E86002C7FC9 /* GXTransferOperation.h in Headers */,
+				1DBB800B21C0F4AE008993B2 /* GXUtil.h in Headers */,
 				1D9238362046D9160092A484 /* BTCBase58.h in Headers */,
 				1D92383C2046D9160092A484 /* BTCBigNumber.h in Headers */,
-				1DD8491020491ED7006FD274 /* PublicKey.h in Headers */,
-				1D923741204539620092A484 /* GrapheneApi.h in Headers */,
-				1D92384A2046DC740092A484 /* ChainConfig.h in Headers */,
-				1D923757204599BB0092A484 /* PrivateKey.h in Headers */,
+				1DD8491020491ED7006FD274 /* GXPublicKey.h in Headers */,
+				1D923741204539620092A484 /* GXGrapheneApi.h in Headers */,
+				1D92384A2046DC740092A484 /* GXChainConfig.h in Headers */,
+				1D923757204599BB0092A484 /* GXPrivateKey.h in Headers */,
 				1D9238392046D9160092A484 /* BTCData.h in Headers */,
-				1DFEA540205A824A002C7FC9 /* SerializeDelegate.h in Headers */,
-				1D92374D20458E3A0092A484 /* TransactionBuilder.h in Headers */,
+				1DFEA540205A824A002C7FC9 /* GXSerializeDelegate.h in Headers */,
+				1D92374D20458E3A0092A484 /* GXTransactionBuilder.h in Headers */,
+				1D959CF721BD7ECA0084A068 /* GXCallContractOperation.h in Headers */,
 				1DFEA554205ACDEB002C7FC9 /* NSDictionary+Expand.h in Headers */,
 				1D9238422046D9160092A484 /* NSData+BTCData.h in Headers */,
 				1D92383E2046D9160092A484 /* NS+BTCBase58.h in Headers */,
@@ -468,6 +497,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DBB801721CA4D8E008993B2 /* Graphene.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +505,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DBB801621CA4A17008993B2 /* Graphene.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,10 +613,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D08BD3020480C0100328C0F /* PrivateKeyTests.m in Sources */,
-				1D08BD2E2048089B00328C0F /* PublicKeyTests.m in Sources */,
-				1D90828B205B8CDD00BCF55C /* TransactionTests.m in Sources */,
-				1D08BD212047E25200328C0F /* ConnectionManagerTests.m in Sources */,
+				1D08BD3020480C0100328C0F /* GXPrivateKeyTests.m in Sources */,
+				1D08BD2E2048089B00328C0F /* GXPublicKeyTests.m in Sources */,
+				1D90828B205B8CDD00BCF55C /* GXTransactionTests.m in Sources */,
+				1D08BD212047E25200328C0F /* GXConnectionManagerTests.m in Sources */,
+				1DBB801121CA41B5008993B2 /* GXUtilTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,28 +625,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D20E05D20515CF1008C82AD /* BaseOperation.m in Sources */,
+				1D20E05D20515CF1008C82AD /* GXBaseOperation.m in Sources */,
 				1D92383B2046D9160092A484 /* NS+BTCBase58.m in Sources */,
 				1DFEA555205ACDEB002C7FC9 /* NSArray+Expand.m in Sources */,
 				1D92383F2046D9160092A484 /* BTCData.m in Sources */,
 				1D9238372046D9160092A484 /* BTCBigNumber.m in Sources */,
-				1DFEA545205A849C002C7FC9 /* AssetAmount.m in Sources */,
-				1D92374E20458E3A0092A484 /* TransactionBuilder.m in Sources */,
-				1D92374A20454DAD0092A484 /* ApiInstances.m in Sources */,
+				1DFEA545205A849C002C7FC9 /* GXAssetAmount.m in Sources */,
+				1D92374E20458E3A0092A484 /* GXTransactionBuilder.m in Sources */,
+				1D92374A20454DAD0092A484 /* GXApiInstances.m in Sources */,
 				1D92380820469AAD0092A484 /* NSData+Base64.m in Sources */,
 				1D9238432046D9160092A484 /* NSData+BTCData.m in Sources */,
-				1D923758204599BB0092A484 /* PrivateKey.m in Sources */,
+				1DBB800C21C0F4AE008993B2 /* GXUtil.m in Sources */,
+				1D923758204599BB0092A484 /* GXPrivateKey.m in Sources */,
 				1D92380520469AAD0092A484 /* NSString+Base64.m in Sources */,
 				1DFEA552205ACDEB002C7FC9 /* NSDictionary+Expand.m in Sources */,
-				1D923746204543830092A484 /* ConnectionManager.m in Sources */,
-				1D92372F204297BC0092A484 /* ChainWebSocket.m in Sources */,
-				1DFEA54D205A97B9002C7FC9 /* MemoData.m in Sources */,
+				1D923746204543830092A484 /* GXConnectionManager.m in Sources */,
+				1D92372F204297BC0092A484 /* GXChainWebSocket.m in Sources */,
+				1DFEA54D205A97B9002C7FC9 /* GXMemoData.m in Sources */,
 				1D58CAFD20616DC300626C37 /* NSMutableData+ProtoBuff.m in Sources */,
-				1D58CB03206192A800626C37 /* GHAES.m in Sources */,
+				1D58CB03206192A800626C37 /* GXAES.m in Sources */,
 				1D92383A2046D9160092A484 /* BTCCurvePoint.m in Sources */,
-				1D923754204599AA0092A484 /* PublicKey.m in Sources */,
-				1D923742204539620092A484 /* GrapheneApi.m in Sources */,
-				1DFEA53C205A6E86002C7FC9 /* TransferOperation.m in Sources */,
+				1D923754204599AA0092A484 /* GXPublicKey.m in Sources */,
+				1D923742204539620092A484 /* GXGrapheneApi.m in Sources */,
+				1D959CF821BD7ECA0084A068 /* GXCallContractOperation.m in Sources */,
+				1DFEA53C205A6E86002C7FC9 /* GXTransferOperation.m in Sources */,
 				1D9238382046D9160092A484 /* BTCBase58.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

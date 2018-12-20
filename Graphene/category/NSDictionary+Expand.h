@@ -10,4 +10,5 @@
 
 @interface NSDictionary(Expand)
 -(NSString*)json;
++ (NSDictionary *)fromJSON:(NSString *)json;
 @end
