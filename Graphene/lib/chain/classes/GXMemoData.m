@@ -28,7 +28,7 @@ uint64_t unique_nonce_uint64(){
         value |= (c << (8 * i));
     }
     fclose(fp);
-    return value;
+    return (uint64_t)value & 0xFFFFFFFF;
 }
 
 @implementation GXMemoData

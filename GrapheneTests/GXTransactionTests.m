@@ -71,7 +71,8 @@
     tx.expiration=1521578798;
     tx.extensions=@[];
     [tx add_signer:[GXPrivateKey fromWif:@"5JNFf2y7JN75HMytcTJVANPVXAzv5iQbxdVDrtJNWfcSsyWUrXU"]];
-    NSLog(@"%@",[tx signedTransaction]);
+    
+    NSLog(@"%@,%@,%@",BTCHexFromData([tx serialize]),[[tx dictionaryValue] json],[tx signedTransaction]);
 }
 
 -(void) testCallContract{

@@ -77,7 +77,7 @@ static uint64_t string_to_name( const char* str )
     static JSContext* instance;
         dispatch_once(&onceToken, ^{
             NSBundle* bundle = [NSBundle bundleForClass:[GXUtil class]];
-            NSString * path = [bundle pathForResource:@"Graphene.bundle/action_serializer" ofType:@"js"];
+            NSString * path = [bundle pathForResource:@"Graphene.bundle/tx_serializer.min" ofType:@"js"];
             NSData * jsData = [[NSData alloc]initWithContentsOfFile:path];
             NSString * jsCode = [[NSString alloc]initWithData:jsData encoding:NSUTF8StringEncoding];
             instance=[[JSContext alloc] init];
@@ -88,7 +88,13 @@ static uint64_t string_to_name( const char* str )
 }
 
 +(NSString*) serialize_action_data:(NSString*)action params:(NSDictionary*)params abi:(NSDictionary*)abi{
-    NSString* jsCode = [NSString stringWithFormat:@"action_serializer.serializeCallData('%@',%@,%@).toString('hex')",action, [params json],[abi json]];
+    NSString* jsCode = [NSString stringWithFormat:@"serializer.serializeCallData('%@',%@,%@).toString('hex')",action, [params json],[abi json]];
+    NSString* result = [[[GXUtil jsContext] evaluateScript:jsCode] toString];
+    return result;
+}
+
++(NSString*) serialize_transaction:(NSDictionary*)transaction{
+    NSString* jsCode = [NSString stringWithFormat:@"serializer.serializeTransaction(%@).toString('hex')", [transaction json]];
     NSString* result = [[[GXUtil jsContext] evaluateScript:jsCode] toString];
     return result;
 }
