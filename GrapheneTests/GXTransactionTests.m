@@ -53,11 +53,6 @@
     }];
 }
 
--(void)testMemoSerialize{
-    GXMemoData* memo=[GXMemoData memoWithPrivate:@"5JNFf2y7JN75HMytcTJVANPVXAzv5iQbxdVDrtJNWfcSsyWUrXU" public:@"GXC7xSR83xcXECGCtyxboNbuhQwnyjVksgtMLX422nDhSM9d2TPRF" message:@"123"];
-    NSLog(@"%@",BTCHexFromData([memo serialize]));
-}
-
 - (void)testTransferSign{
     GXTransferOperation* transferOp=[[GXTransferOperation alloc] init];
     transferOp.fee=[[GXAssetAmount alloc] initWithAsset:@"1.3.1" amount:2500];

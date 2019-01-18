@@ -9,6 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @protocol GXSerializeDelegate
--(NSData*)serialize;
 -(NSDictionary*)dictionaryValue;
 @end

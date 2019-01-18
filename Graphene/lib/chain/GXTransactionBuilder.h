@@ -25,4 +25,5 @@
 -(void)processTransaction:(void(^)(NSError *err,NSDictionary* tx))callback broadcast:(BOOL)broadcast;
 -(void)add_signer:(GXPrivateKey*)private_key;
 -(NSDictionary*)signedTransaction;
+-(NSData*) serialize;
 @end

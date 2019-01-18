@@ -44,26 +44,6 @@ uint64_t unique_nonce_uint64(){
     return memo_data;
 }
 
--(NSData *)serialize{
-    NSMutableData* result = [NSMutableData data];
-    if([_from rangeOfString:GX_ADDRESS_PREFIX].location!=0){
-        [[NSException exceptionWithName:@"MemoData" reason:@"invalid from key" userInfo:@{@"value":_from}] raise];
-    }
-    else{
-        [result appendData:[[GXPublicKey fromString:_from] curvePoint].data];
-    }
-    if([_to rangeOfString:GX_ADDRESS_PREFIX].location!=0){
-        [[NSException exceptionWithName:@"MemoData" reason:@"invalid to key" userInfo:@{@"value":_to}] raise];
-    }
-    else{
-        [result appendData:[[GXPublicKey fromString:_to] curvePoint].data];
-    }
-    [result appendBytes:&_nonce length:sizeof(_nonce)];
-    [result writeVarInt32:(int32_t)(_message.length)];
-    [result appendData:_message];
-    return result;
-}
-
 -(NSDictionary *)dictionaryValue{
     return @{
              @"from":_from,

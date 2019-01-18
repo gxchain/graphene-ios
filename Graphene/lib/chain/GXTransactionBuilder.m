@@ -177,40 +177,9 @@
 
 #pragma mark - serialize delegate methods
 -(NSData*)serialize{
-    
     NSDictionary* dict = [self dictionaryValue];
-    
     NSString* result=  [GXUtil serialize_transaction:dict];
-    
     return BTCDataFromHex(result);
-//    NSMutableData* result =  [NSMutableData data];
-//    [result appendBytes:&_ref_block_num length:sizeof(_ref_block_num)];
-//    [result appendBytes:&_ref_block_prefix length:sizeof(_ref_block_prefix)];
-//    [result appendBytes:&_expiration length:sizeof(_expiration)];
-//    int32_t size = (int32_t)(_operations?_operations.count:0);
-//    [result writeVarInt32:size];
-//    if(size>0){
-//        _operations=[self sortedOperations];
-//        [_operations enumerateObjectsUsingBlock:^(GXBaseOperation * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//            int32_t op_id = obj.operation_id;
-//            [result writeVarInt32:op_id];
-//            [result appendData:[obj serialize]];
-//        }];
-//    }
-//    int32_t size2 = (int32_t)(_extensions?_extensions.count:0);
-//    [result writeVarInt32:size2];
-//    if(_extensions){
-//        [_extensions enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//            if([obj respondsToSelector:NSSelectorFromString(@"serialize")]){
-//                [result appendData:[obj performSelector:NSSelectorFromString(@"serialize") withObject:nil]]; //No Warning
-//            }
-//            else{
-//                NSLog(@"Unknow extension object,%@", obj);
-//            }
-//        }];
-//    }
-    
-//    return result;
 }
 
 -(NSArray*)sortedOperations{
