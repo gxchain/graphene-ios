@@ -59,6 +59,7 @@ static int ECDSA_SIG_recover_key_GFp(EC_KEY *eckey, ECDSA_SIG *ecsig, const unsi
     return hash;
 }
 
+//Signature Malleability: https://github.com/bitshares/bitshares1-core/issues/1129
 -(BOOL) isSignatureCanonical:(NSData*) signData{
     unsigned char *sigBytes = (unsigned char *)[signData bytes];
     return !(sigBytes[1] & 0x80)
