@@ -59,8 +59,25 @@ static int ECDSA_SIG_recover_key_GFp(EC_KEY *eckey, ECDSA_SIG *ecsig, const unsi
     return hash;
 }
 
+-(BOOL) isSignatureCanonical:(NSData*) signData{
+    unsigned char *sigBytes = (unsigned char *)[signData bytes];
+    return !(sigBytes[1] & 0x80)
+    && !(sigBytes[1] == 0 && !(sigBytes[2] & 0x80))
+    && !(sigBytes[33] & 0x80)
+    && !(sigBytes[33] == 0 && !(sigBytes[34] & 0x80));
+}
+
 -(NSData*)sign:(NSData*)data{
-    NSData* sig=[self compactSignatureForHash:BTCSHA256(data)];
+    NSData* sig=nil;
+    NSInteger i = 0;
+    do {
+        i++;
+        sig = [self compactSignatureForHash:BTCSHA256(data)];
+        NSLog(@"%@",BTCHexFromData(sig));
+        if(i>3){
+            NSLog(@"Signature tried %ld times", i);
+        }
+    } while (![self isSignatureCanonical:sig]);
     return sig;
 }
 
